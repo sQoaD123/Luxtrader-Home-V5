@@ -276,11 +276,8 @@ body {
     }
   }
 }
-.main-slider {
+.main {
   position: relative;
-  .swiper-slide {
-    height: auto;
-  }
   &__control {
     position: absolute;
     z-index: 10;
@@ -302,6 +299,13 @@ body {
       left: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+  }
+}
+.main-slider {
+  position: relative;
+  overflow: hidden;
+  .swiper-slide {
+    height: auto;
   }
 }
 .item-main-slider {
