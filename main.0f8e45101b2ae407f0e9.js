@@ -10299,6 +10299,8 @@ var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! img/icon/arrow.png */ "./src/img/icon/arrow.png"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! img/icon/lots-slider_arrow.png */ "./src/img/icon/lots-slider_arrow.png"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! img/btn-decor_circul.png */ "./src/img/btn-decor_circul.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! img/mini-pattern.png */ "./src/img/mini-pattern.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! img/pattern.png */ "./src/img/pattern.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&display=swap&subset=cyrillic-ext);"]);
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular&display=swap&subset=cyrillic-ext);"]);
@@ -10314,6 +10316,8 @@ var ___CSS_LOADER_URL_REPLACEMENT_8___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_9___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_9___);
 var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_10___);
 var ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
+var ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
+var ___CSS_LOADER_URL_REPLACEMENT_13___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_13___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -10739,9 +10743,9 @@ body {
 }
 
 ._container {
-  max-width: 970px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 ._ibg {
@@ -11539,7 +11543,229 @@ body {
   .current-bet-info-lot__value {
     font-size: 35px;
   }
-}`, "",{"version":3,"sources":["webpack://./src/libs/normalize.css","webpack://./src/index.scss","webpack://./src/style/_nullstyle.scss","webpack://./src/style/_fonts.scss","webpack://./src/style/_var.scss"],"names":[],"mappings":"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","sourcesContent":["/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   ========================================================================== */\n\n/**\n * 1. Correct the line height in all browsers.\n * 2. Prevent adjustments of font size after orientation changes in iOS.\n */\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers.\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Render the `main` element consistently in IE.\n */\n\nmain {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Remove the gray background on active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * 1. Remove the bottom border in Chrome 57-\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove the border on images inside links in IE 10.\n */\n\nimg {\n  border-style: none;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers.\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\n[type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Correct the padding in Firefox.\n */\n\nfieldset {\n  padding: 0.35em 0.75em 0.625em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\n * Remove the default vertical scrollbar in IE 10+.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10.\n * 2. Remove the padding in IE 10.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in Edge, IE 10+, and Firefox.\n */\n\ndetails {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Misc\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10+.\n */\n\ntemplate {\n  display: none;\n}\n\n/**\n * Add the correct display in IE 10.\n */\n\n[hidden] {\n  display: none;\n}\n","@use \"libs/normalize\";\r\n@use \"style/nullstyle\";\r\n@use \"style/fonts\";\r\n@use \"style/var\";\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&display=swap&subset=cyrillic-ext\");\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular&display=swap&subset=cyrillic-ext\");\r\n\r\nbody {\r\n  font-family: \"PT Sans\";\r\n  margin: 0;\r\n  overflow-x: hidden;\r\n}\r\n._container {\r\n  max-width: 970px;\r\n  margin: 0 auto;\r\n  padding: 0 10px;\r\n}\r\n._ibg {\r\n  background-position: center;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  img {\r\n    display: none;\r\n  }\r\n}\r\n._ibg img {\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n}\r\n.header {\r\n  background: #1c242a;\r\n  position: relative;\r\n  z-index: 50;\r\n  &__container {\r\n    position: relative;\r\n    display: flex;\r\n    align-items: center;\r\n    height: 75px;\r\n    @media (max-width: 767px) {\r\n      justify-content: space-between;\r\n    }\r\n  }\r\n  &__logo {\r\n    position: relative;\r\n    z-index: 2;\r\n    width: 144px;\r\n    @media (max-width: 767px) {\r\n      position: absolute;\r\n      left: 50%;\r\n      top: 50%;\r\n      transform: translate(-50%, -50%);\r\n    }\r\n  }\r\n}\r\n.menu {\r\n  padding: 0 0 0 3.16%;\r\n  flex: 1 1 auto;\r\n  @media (max-width: 767px) {\r\n    flex: 0 0 auto;\r\n  }\r\n  &__body {\r\n    @media (max-width: 767px) {\r\n      opacity: 0;\r\n      visibility: hidden;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      left: 0;\r\n      top: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n      &._active {\r\n        opacity: 1;\r\n        visibility: visible;\r\n      }\r\n    }\r\n  }\r\n  &__list {\r\n    display: flex;\r\n    justify-content: center;\r\n    li {\r\n      margin: 0 15px;\r\n    }\r\n    @media (max-width: 767px) {\r\n      display: block;\r\n      text-align: center;\r\n      li {\r\n        margin: 0 0 30px 0;\r\n        &:last-child {\r\n          margin: 0;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 1.4px;\r\n    color: #fff;\r\n    text-transform: uppercase;\r\n    @media (max-width: 767px) {\r\n      font-size: 24px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n}\r\n.icon-menu {\r\n  @media (max-width: 767px) {\r\n    position: relative;\r\n    width: 30px;\r\n    height: 18px;\r\n    cursor: pointer;\r\n    z-index: 5;\r\n    span {\r\n      top: calc(50% - 1px);\r\n      left: 0px;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 2px;\r\n      background: #bb9c66;\r\n      transition: all 0.3s ease 0s;\r\n      &:first-child {\r\n        top: 0;\r\n      }\r\n      &:last-child {\r\n        top: auto;\r\n        bottom: 0px;\r\n      }\r\n    }\r\n    &._active {\r\n      span {\r\n        opacity: 0;\r\n        &:first-child {\r\n          opacity: 1;\r\n          transform: rotate(-45deg);\r\n          top: 8px;\r\n        }\r\n        &:last-child {\r\n          opacity: 1;\r\n          transform: rotate(45deg);\r\n          bottom: 8px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n.actions-header {\r\n  display: flex;\r\n  align-items: center;\r\n  &__region {\r\n    position: relative;\r\n    z-index: 2;\r\n    @extend .menu__link;\r\n    padding: 0 0 0 30px;\r\n    background: url(\"img/icon/globe.png\") left no-repeat;\r\n    line-height: 18px;\r\n    min-width: 18px;\r\n    min-height: 18px;\r\n    @media (max-width: 890px) {\r\n      padding: 0;\r\n      span {\r\n        display: none;\r\n      }\r\n    }\r\n  }\r\n  &__user {\r\n    margin: 0 0 0 30px;\r\n    @media (max-width: 890px) {\r\n      margin: 0 0 0 15px;\r\n    }\r\n  }\r\n}\r\n.user-header {\r\n  &__icon {\r\n    position: relative;\r\n    z-index: 2;\r\n    cursor: pointer;\r\n  }\r\n  &__menu {\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 0.3s ease 0s;\r\n    top: 88px;\r\n    position: absolute;\r\n    right: 0;\r\n    background: #1c242a;\r\n    padding: 20px;\r\n    min-width: 176px;\r\n    @media (max-width: 767px) {\r\n      background: none;\r\n      text-align: center;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      top: 0;\r\n      left: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n    }\r\n    li {\r\n      margin: 0 0 8px 0;\r\n      @media (max-width: 767px) {\r\n        font-size: 24px;\r\n        margin: 0 0 30px 0;\r\n        font-family: \"PDFin\";\r\n        letter-spacing: 1.4px;\r\n        color: #fff;\r\n        text-transform: uppercase;\r\n      }\r\n      &:last-child {\r\n        margin: 0;\r\n      }\r\n    }\r\n    &._active {\r\n      opacity: 1;\r\n      visibility: visible;\r\n      top: 78px;\r\n      @media (max-width: 767px) {\r\n        top: 0;\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    position: relative;\r\n    z-index: 5;\r\n    color: #fff;\r\n    padding: 0 0 0 30px;\r\n    display: inline-block;\r\n    line-height: 18px;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n    &_1 {\r\n      background: url(\"img/icon/menu/01.png\") 1px center no-repeat;\r\n    }\r\n    &_2 {\r\n      background: url(\"img/icon/menu/02.png\") left center no-repeat;\r\n    }\r\n    &_3 {\r\n      background: url(\"img/icon/menu/03.png\") 4px center no-repeat;\r\n    }\r\n    &_4 {\r\n      background: url(\"img/icon/menu/04.png\") left center no-repeat;\r\n    }\r\n  }\r\n}\r\n.main {\r\n  position: relative;\r\n  &__control {\r\n    position: absolute;\r\n    z-index: 10;\r\n    left: 50%;\r\n    bottom: 0;\r\n    width: 100px;\r\n    height: 100px;\r\n    transform: translate(-50%, 50%);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    &::after {\r\n      content: \"\";\r\n      background: #fff;\r\n      position: absolute;\r\n      width: 70%;\r\n      height: 70%;\r\n      top: 50%;\r\n      left: 50%;\r\n      transform: translate(-50%, -50%) rotate(-45deg);\r\n    }\r\n  }\r\n}\r\n.main-slider {\r\n  position: relative;\r\n  overflow: hidden;\r\n  .swiper-slide {\r\n    height: auto;\r\n  }\r\n}\r\n.item-main-slider {\r\n  text-align: center;\r\n  padding: 30px 0 100px 0;\r\n  position: relative;\r\n  &__content {\r\n    position: relative;\r\n    z-index: 2;\r\n    height: 100%;\r\n  }\r\n  &__container {\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__bg {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n  }\r\n  &__text {\r\n    color: #fff;\r\n    font-size: 15px;\r\n    line-height: calc(25 / 15);\r\n    max-width: 700px;\r\n    margin: 25px auto 0;\r\n    flex: 1 1 auto;\r\n  }\r\n  &__btn {\r\n    margin: 55px 0 0 0;\r\n  }\r\n}\r\n.control-main-slider {\r\n  &__arrow {\r\n    position: relative;\r\n    z-index: 2;\r\n    background: url(\"img/icon/arrow.png\") 0 0 no-repeat;\r\n    width: 14px;\r\n    height: 24px;\r\n    cursor: pointer;\r\n    &_next {\r\n      transform: rotate(-180deg);\r\n    }\r\n  }\r\n  &__decor {\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 12px;\r\n    animation: rotate 5s infinite linear;\r\n  }\r\n}\r\n@keyframes rotate {\r\n  0% {\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n.title {\r\n  text-align: center;\r\n  &__item {\r\n    font-family: \"CeremoniousOne\";\r\n    color: #bb9c66;\r\n    font-size: 40px;\r\n    margin: 0 0 0.5em 0;\r\n  }\r\n  &__main {\r\n    font-size: 35px;\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 5.25px;\r\n    text-transform: uppercase;\r\n    font-weight: 500;\r\n    line-height: calc(40 / 35);\r\n    &_regular {\r\n      font-weight: 400;\r\n    }\r\n    &_w {\r\n      color: #fff;\r\n    }\r\n    @media (max-width: 767px) {\r\n      font-size: 30px;\r\n    }\r\n  }\r\n}\r\n.btn {\r\n  display: inline-block;\r\n  padding: 0;\r\n  position: relative;\r\n  &::before,\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    height: 3px;\r\n    width: 100%;\r\n  }\r\n  &::before {\r\n    top: 0;\r\n    background: #c3a774;\r\n  }\r\n  &::after {\r\n    bottom: 0;\r\n    background: #8f6630;\r\n  }\r\n  &__body {\r\n    &::before,\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      top: 0;\r\n      height: 100%;\r\n      width: 3px;\r\n      background-image: linear-gradient(to top, #8f6630, #c3a774);\r\n    }\r\n    &::before {\r\n      left: 0;\r\n    }\r\n    &::after {\r\n      right: 0;\r\n    }\r\n    span {\r\n      min-height: 50px;\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      color: #fff;\r\n      font-size: 15px;\r\n      text-transform: uppercase;\r\n      font-family: \"PDFin\";\r\n      letter-spacing: 2px;\r\n      padding: 0 50px;\r\n      &::after {\r\n        content: \"\";\r\n        background-image: linear-gradient(\r\n          to top,\r\n          rgb(187, 156, 102) 0%,\r\n          rgba(187, 156, 102, 0) 100%\r\n        );\r\n        opacity: 0.06;\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 50%;\r\n        transition: height 0.5s ease 0s, opacity 0.5s ease 0s;\r\n      }\r\n    }\r\n  }\r\n  @media (min-width: 992px) {\r\n    &:hover {\r\n      .btn__body {\r\n        span {\r\n          &::after {\r\n            opacity: 0.3;\r\n            height: 100%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &_big {\r\n    .btn__body span {\r\n      font-size: 21px;\r\n      color: #000;\r\n      font-weight: 500;\r\n      letter-spacing: 0px;\r\n      padding: 0 10px;\r\n    }\r\n  }\r\n}\r\n.lots {\r\n  padding: 85px 0 63px;\r\n  &__container {\r\n    overflow: hidden;\r\n  }\r\n  &__header {\r\n    margin: 0 0 40px;\r\n  }\r\n  &__slider {\r\n  }\r\n}\r\n.block-header {\r\n  &__title {\r\n    margin: 0 0 20px 0;\r\n  }\r\n  &__decor {\r\n  }\r\n}\r\n.block-decor {\r\n  display: flex;\r\n  align-items: center;\r\n  &__items {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n    align-items: center;\r\n    &::before {\r\n      content: \"\";\r\n      height: 1px;\r\n      width: 100%;\r\n      flex: 1 1 auto;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: calc(15px * 0.72);\r\n      height: calc(25px * 0.72);\r\n      flex: 0 0 calc(25px * 0.72);\r\n      border: 1px solid #bb9c66;\r\n      transform: rotate(-45deg);\r\n      margin: 0 5px;\r\n    }\r\n    span {\r\n      display: flex;\r\n      align-items: center;\r\n      margin: 0 5px;\r\n      flex: 0 0 28px;\r\n      justify-content: space-between;\r\n      &::before {\r\n        content: \"\";\r\n        width: 10px;\r\n        height: 10px;\r\n        flex: 0 0 10px;\r\n        border-radius: 50%;\r\n        border: 1px solid #bb9c66;\r\n      }\r\n      &::after {\r\n        content: \"\";\r\n        width: calc(15px * 0.72);\r\n        height: calc(15px * 0.72);\r\n        flex: 0 0 calc(15px * 0.72);\r\n        border: 1px solid #bb9c66;\r\n        transform: rotate(-45deg);\r\n      }\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        flex-direction: row-reverse;\r\n      }\r\n    }\r\n  }\r\n  &__icon {\r\n    text-align: center;\r\n    flex: 0 0 145px;\r\n    @media (max-width: 767px) {\r\n      flex: 0 0 95px;\r\n    }\r\n    img {\r\n      max-width: 100%;\r\n      border-radius: 50%;\r\n      box-shadow: #bb9c66 0 14px 12px -8px;\r\n    }\r\n  }\r\n}\r\n.slider-lots {\r\n  &__body {\r\n    margin: 0 -50px 50px;\r\n    .swiper-slide {\r\n      height: auto;\r\n    }\r\n    @media (max-width: 975px) {\r\n      margin: 0 -15px 50px;\r\n    }\r\n  }\r\n  &__slide {\r\n    padding: 0 50px;\r\n    @media (max-width: 975px) {\r\n      padding: 0 15px;\r\n    }\r\n  }\r\n  &__control {\r\n  }\r\n}\r\n.control-slider-lots {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  &__arrow {\r\n    cursor: pointer;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: flex-end;\r\n    span {\r\n      background: url(\"img/icon/lots-slider_arrow.png\") left no-repeat;\r\n      flex: 0 0 108px;\r\n      width: 108px;\r\n      height: 35px;\r\n      @media (max-width: 450px) {\r\n        flex: 0 0 50px;\r\n      }\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      margin: 0 5px;\r\n      width: 15px;\r\n      height: 15px;\r\n      border-radius: 50%;\r\n      border: 1px solid #bb9c66;\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        transform: rotate(-180deg);\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    background: url(\"img/btn-decor_circul.png\") 0 0 no-repeat;\r\n    flex: 0 0 100px;\r\n    width: 100px;\r\n    height: 100px;\r\n    margin: 0 20px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    font-size: 21px;\r\n    color: #000;\r\n    font-weight: 500;\r\n    font-family: \"PDFin\";\r\n    text-transform: uppercase;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        border-radius: 50%;\r\n        background: linear-gradient(to top, #8f6630, #c3a774);\r\n      }\r\n    }\r\n  }\r\n}\r\n.lot {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100%;\r\n  text-align: center;\r\n  &__header {\r\n    text-align: center;\r\n    margin: 0 0 30px 0;\r\n    position: relative;\r\n  }\r\n  &__image {\r\n    display: block;\r\n    border: 3px solid #bb9c66;\r\n    padding: 0 0 98% 0;\r\n  }\r\n  &__timer {\r\n  }\r\n  &__title {\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    color: #000;\r\n    text-transform: uppercase;\r\n    font-family: \"PDFin\";\r\n    line-height: calc(25 / 21);\r\n    flex: 1 1 auto;\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 0 calc(27 / 21 * 1em) 0;\r\n    @media (max-width: 975px) {\r\n      font-size: 18px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n  &__info {\r\n  }\r\n  &__btn {\r\n    margin: 0 25px;\r\n  }\r\n}\r\n.timer-lot {\r\n  transform: translate(-50%, 50%);\r\n  width: 72px;\r\n  height: 72px;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  position: relative;\r\n  padding: 2px 0 0 0;\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 0;\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &::before {\r\n    content: \"\";\r\n    background: #fff;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    transform: rotate(-45deg);\r\n  }\r\n  &__icon {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__item {\r\n    font-family: \"PT Sans Narrow\";\r\n    font-size: 18px;\r\n  }\r\n}\r\n.info-lot {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin: 0 0 35px 0;\r\n  &__statistic {\r\n    flex: 0 0 50px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__icon {\r\n    width: calc(25px * 0.72);\r\n    height: calc(25px * 0.72);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    position: relative;\r\n    margin: 0 0 10px 0;\r\n    img {\r\n      position: relative;\r\n      z-index: 2;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 100%;\r\n      transform: rotate(-45deg);\r\n      background: #1c242a;\r\n    }\r\n  }\r\n  &__value {\r\n    font-size: 14px;\r\n    border-bottom: 1px solid #bb9c66;\r\n    min-width: 50px;\r\n  }\r\n  &__current-bet {\r\n    flex: 1 1 auto;\r\n    @media (max-width: 975px) {\r\n      flex: 0 0 auto;\r\n    }\r\n  }\r\n}\r\n.current-bet-info-lot {\r\n  padding: 0 5px;\r\n  position: relative;\r\n  @media (max-width: 975px) {\r\n    padding: 0 10px;\r\n  }\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    width: 72px;\r\n    height: 72px;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%) rotate(-45deg);\r\n    border: 1px solid #bb9c66;\r\n  }\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &__label {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__value {\r\n    font-family: \"Bravo\";\r\n    font-size: 50px;\r\n    padding: 0 0 5px 0;\r\n    white-space: nowrap;\r\n    @media (max-width: 975px) {\r\n      font-size: 35px;\r\n    }\r\n  }\r\n  &__currency {\r\n  }\r\n}\r\n","*{\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tborder: 0;\r\n}\r\n*, *::before, *::after {box-sizing: border-box;}\r\n:focus,:active{outline: none;}\r\na:focus,a:active{outline: none;}\r\n\r\nnav,footer,header,aside{display: block;}\r\n\r\nhtml,body{\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tfont-size: 100%;\r\n\tline-height: 1;\r\n\tfont-size: 14px;\r\n\t-ms-text-size-adjust: 100%;\r\n\t-moz-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%;\r\n}\r\ninput,button,textarea{font-family: inherit;}\r\n\r\ninput::-ms-clear{display: none;}\r\nbutton{cursor: pointer;}\r\nbutton::-msz-focus-inner {padding: 0; border: 0;}\r\na,-a:visited{text-decoration: none;}\r\na:hover{text-decoration: none;}\r\nul{list-style: none;}\r\nli{list-style: none;}\r\nimg{vertical-align: none;}\r\n\r\nh1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}","@font-face {\r\n  font-family: \"Bravo\";\r\n  src: url(\"fonts/BravoRGRegular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"CeremoniousOne\";\r\n  src: url(\"fonts/ceremonious_one.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-regular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-medium.ttf\") format(\"truetype\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}\r\n",":root {\r\n  --main-bg-color: brown;\r\n}\r\n"],"sourceRoot":""}]);
+}
+.categories__container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto 85px;
+}
+.categories__container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+  background: #fff;
+}
+.categories__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -50px;
+  position: relative;
+  padding: 34px 0 0 0;
+}
+.categories__row::before, .categories__row::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 17.28px;
+  height: 17.28px;
+  flex: 0 0 17.28px;
+  transform: translate(-50%, 0) rotate(-45deg);
+  border: 1px solid #bb9c66;
+}
+.categories__row::before {
+  left: 33.333%;
+}
+@media (max-width: 975px) {
+  .categories__row::before {
+    left: 50%;
+  }
+}
+@media (max-width: 975px) {
+  .categories__row::before {
+    display: none;
+  }
+}
+.categories__row::after {
+  left: 66.667%;
+  margin: 0 1px 0 0;
+}
+@media (max-width: 975px) {
+  .categories__row::after {
+    display: none;
+  }
+}
+.categories__column {
+  padding: 0 50px 25px;
+  flex: 0 1 33.333%;
+  margin: 0 0 25px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.categories__column::before {
+  content: "";
+  background: #bb9c66;
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 975px) {
+  .categories__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 650px) {
+  .categories__column {
+    flex: 1 1 100%;
+  }
+}
+.categories__decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: calc(100% + 9px);
+  transform: translate(50%, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+.categories__decor::before {
+  content: "";
+  width: 1px;
+  flex: 1 1 auto;
+  background: #bb9c66;
+}
+.categories__decor::after {
+  content: "";
+  width: 17.28px;
+  height: 17.28px;
+  flex: 0 0 17.28px;
+  transform: rotate(-45deg);
+  border: 1px solid #bb9c66;
+  margin: 15px 0 0 0;
+}
+.categories__decor span {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories__decor span::before {
+  content: "";
+  background: #bb9c66;
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+.categories__decor span::after {
+  content: "";
+  width: 1px;
+  flex: 1 1 auto;
+  background: #bb9c66;
+}
+
+.item {
+  position: relative;
+  padding: 30px 30px 40px;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .item:hover .item__bg {
+    transform: scale(1.1);
+  }
+  .item:hover .item__bg::after {
+    opacity: 0.8;
+  }
+}
+.item__link {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.item__icon {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 22px 0;
+}
+.item__title {
+  letter-spacing: 2.1px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "PDFin";
+  flex: 1 1 auto;
+  line-height: 1.1904761905;
+}
+.item__decor {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.item__bg {
+  transition: transform 0.5s ease 0s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.item__bg::after {
+  content: "";
+  transition: opacity 0.5s ease 0s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(28, 36, 42, 0.75);
+}
+
+.text-categories {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6666666667;
+}
+@media (max-width: 767px) {
+  .text-categories {
+    text-align: justify;
+  }
+}
+.text-categories p {
+  margin: 0 0 25px 0;
+}
+.text-categories p:last-child {
+  margin: 0;
+}
+.text-categories__body {
+  padding: 10px 0 25px 130px;
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_12___}) 0 0 no-repeat, url(${___CSS_LOADER_URL_REPLACEMENT_13___}) 0 5px repeat-y;
+}`, "",{"version":3,"sources":["webpack://./src/libs/normalize.css","webpack://./src/index.scss","webpack://./src/style/_nullstyle.scss","webpack://./src/style/_fonts.scss","webpack://./src/style/_var.scss"],"names":[],"mappings":"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","sourcesContent":["/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   ========================================================================== */\n\n/**\n * 1. Correct the line height in all browsers.\n * 2. Prevent adjustments of font size after orientation changes in iOS.\n */\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers.\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Render the `main` element consistently in IE.\n */\n\nmain {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Remove the gray background on active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * 1. Remove the bottom border in Chrome 57-\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove the border on images inside links in IE 10.\n */\n\nimg {\n  border-style: none;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers.\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\n[type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Correct the padding in Firefox.\n */\n\nfieldset {\n  padding: 0.35em 0.75em 0.625em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\n * Remove the default vertical scrollbar in IE 10+.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10.\n * 2. Remove the padding in IE 10.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in Edge, IE 10+, and Firefox.\n */\n\ndetails {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Misc\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10+.\n */\n\ntemplate {\n  display: none;\n}\n\n/**\n * Add the correct display in IE 10.\n */\n\n[hidden] {\n  display: none;\n}\n","@use \"libs/normalize\";\r\n@use \"style/nullstyle\";\r\n@use \"style/fonts\";\r\n@use \"style/var\";\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&display=swap&subset=cyrillic-ext\");\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular&display=swap&subset=cyrillic-ext\");\r\n\r\nbody {\r\n  font-family: \"PT Sans\";\r\n  margin: 0;\r\n  overflow-x: hidden;\r\n}\r\n._container {\r\n  max-width: 980px;\r\n  margin: 0 auto;\r\n  padding: 0 15px;\r\n}\r\n._ibg {\r\n  background-position: center;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  img {\r\n    display: none;\r\n  }\r\n}\r\n._ibg img {\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n}\r\n.header {\r\n  background: #1c242a;\r\n  position: relative;\r\n  z-index: 50;\r\n  &__container {\r\n    position: relative;\r\n    display: flex;\r\n    align-items: center;\r\n    height: 75px;\r\n    @media (max-width: 767px) {\r\n      justify-content: space-between;\r\n    }\r\n  }\r\n  &__logo {\r\n    position: relative;\r\n    z-index: 2;\r\n    width: 144px;\r\n    @media (max-width: 767px) {\r\n      position: absolute;\r\n      left: 50%;\r\n      top: 50%;\r\n      transform: translate(-50%, -50%);\r\n    }\r\n  }\r\n}\r\n.menu {\r\n  padding: 0 0 0 3.16%;\r\n  flex: 1 1 auto;\r\n  @media (max-width: 767px) {\r\n    flex: 0 0 auto;\r\n  }\r\n  &__body {\r\n    @media (max-width: 767px) {\r\n      opacity: 0;\r\n      visibility: hidden;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      left: 0;\r\n      top: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n      &._active {\r\n        opacity: 1;\r\n        visibility: visible;\r\n      }\r\n    }\r\n  }\r\n  &__list {\r\n    display: flex;\r\n    justify-content: center;\r\n    li {\r\n      margin: 0 15px;\r\n    }\r\n    @media (max-width: 767px) {\r\n      display: block;\r\n      text-align: center;\r\n      li {\r\n        margin: 0 0 30px 0;\r\n        &:last-child {\r\n          margin: 0;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 1.4px;\r\n    color: #fff;\r\n    text-transform: uppercase;\r\n    @media (max-width: 767px) {\r\n      font-size: 24px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n}\r\n.icon-menu {\r\n  @media (max-width: 767px) {\r\n    position: relative;\r\n    width: 30px;\r\n    height: 18px;\r\n    cursor: pointer;\r\n    z-index: 5;\r\n    span {\r\n      top: calc(50% - 1px);\r\n      left: 0px;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 2px;\r\n      background: #bb9c66;\r\n      transition: all 0.3s ease 0s;\r\n      &:first-child {\r\n        top: 0;\r\n      }\r\n      &:last-child {\r\n        top: auto;\r\n        bottom: 0px;\r\n      }\r\n    }\r\n    &._active {\r\n      span {\r\n        opacity: 0;\r\n        &:first-child {\r\n          opacity: 1;\r\n          transform: rotate(-45deg);\r\n          top: 8px;\r\n        }\r\n        &:last-child {\r\n          opacity: 1;\r\n          transform: rotate(45deg);\r\n          bottom: 8px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n.actions-header {\r\n  display: flex;\r\n  align-items: center;\r\n  &__region {\r\n    position: relative;\r\n    z-index: 2;\r\n    @extend .menu__link;\r\n    padding: 0 0 0 30px;\r\n    background: url(\"img/icon/globe.png\") left no-repeat;\r\n    line-height: 18px;\r\n    min-width: 18px;\r\n    min-height: 18px;\r\n    @media (max-width: 890px) {\r\n      padding: 0;\r\n      span {\r\n        display: none;\r\n      }\r\n    }\r\n  }\r\n  &__user {\r\n    margin: 0 0 0 30px;\r\n    @media (max-width: 890px) {\r\n      margin: 0 0 0 15px;\r\n    }\r\n  }\r\n}\r\n.user-header {\r\n  &__icon {\r\n    position: relative;\r\n    z-index: 2;\r\n    cursor: pointer;\r\n  }\r\n  &__menu {\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 0.3s ease 0s;\r\n    top: 88px;\r\n    position: absolute;\r\n    right: 0;\r\n    background: #1c242a;\r\n    padding: 20px;\r\n    min-width: 176px;\r\n    @media (max-width: 767px) {\r\n      background: none;\r\n      text-align: center;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      top: 0;\r\n      left: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n    }\r\n    li {\r\n      margin: 0 0 8px 0;\r\n      @media (max-width: 767px) {\r\n        font-size: 24px;\r\n        margin: 0 0 30px 0;\r\n        font-family: \"PDFin\";\r\n        letter-spacing: 1.4px;\r\n        color: #fff;\r\n        text-transform: uppercase;\r\n      }\r\n      &:last-child {\r\n        margin: 0;\r\n      }\r\n    }\r\n    &._active {\r\n      opacity: 1;\r\n      visibility: visible;\r\n      top: 78px;\r\n      @media (max-width: 767px) {\r\n        top: 0;\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    position: relative;\r\n    z-index: 5;\r\n    color: #fff;\r\n    padding: 0 0 0 30px;\r\n    display: inline-block;\r\n    line-height: 18px;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n    &_1 {\r\n      background: url(\"img/icon/menu/01.png\") 1px center no-repeat;\r\n    }\r\n    &_2 {\r\n      background: url(\"img/icon/menu/02.png\") left center no-repeat;\r\n    }\r\n    &_3 {\r\n      background: url(\"img/icon/menu/03.png\") 4px center no-repeat;\r\n    }\r\n    &_4 {\r\n      background: url(\"img/icon/menu/04.png\") left center no-repeat;\r\n    }\r\n  }\r\n}\r\n.main {\r\n  position: relative;\r\n  &__control {\r\n    position: absolute;\r\n    z-index: 10;\r\n    left: 50%;\r\n    bottom: 0;\r\n    width: 100px;\r\n    height: 100px;\r\n    transform: translate(-50%, 50%);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    &::after {\r\n      content: \"\";\r\n      background: #fff;\r\n      position: absolute;\r\n      width: 70%;\r\n      height: 70%;\r\n      top: 50%;\r\n      left: 50%;\r\n      transform: translate(-50%, -50%) rotate(-45deg);\r\n    }\r\n  }\r\n}\r\n.main-slider {\r\n  position: relative;\r\n  overflow: hidden;\r\n  .swiper-slide {\r\n    height: auto;\r\n  }\r\n}\r\n.item-main-slider {\r\n  text-align: center;\r\n  padding: 30px 0 100px 0;\r\n  position: relative;\r\n  &__content {\r\n    position: relative;\r\n    z-index: 2;\r\n    height: 100%;\r\n  }\r\n  &__container {\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__bg {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n  }\r\n  &__text {\r\n    color: #fff;\r\n    font-size: 15px;\r\n    line-height: calc(25 / 15);\r\n    max-width: 700px;\r\n    margin: 25px auto 0;\r\n    flex: 1 1 auto;\r\n  }\r\n  &__btn {\r\n    margin: 55px 0 0 0;\r\n  }\r\n}\r\n.control-main-slider {\r\n  &__arrow {\r\n    position: relative;\r\n    z-index: 2;\r\n    background: url(\"img/icon/arrow.png\") 0 0 no-repeat;\r\n    width: 14px;\r\n    height: 24px;\r\n    cursor: pointer;\r\n    &_next {\r\n      transform: rotate(-180deg);\r\n    }\r\n  }\r\n  &__decor {\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 12px;\r\n    animation: rotate 5s infinite linear;\r\n  }\r\n}\r\n@keyframes rotate {\r\n  0% {\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n.title {\r\n  text-align: center;\r\n  &__item {\r\n    font-family: \"CeremoniousOne\";\r\n    color: #bb9c66;\r\n    font-size: 40px;\r\n    margin: 0 0 0.5em 0;\r\n  }\r\n  &__main {\r\n    font-size: 35px;\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 5.25px;\r\n    text-transform: uppercase;\r\n    font-weight: 500;\r\n    line-height: calc(40 / 35);\r\n    &_regular {\r\n      font-weight: 400;\r\n    }\r\n    &_w {\r\n      color: #fff;\r\n    }\r\n    @media (max-width: 767px) {\r\n      font-size: 30px;\r\n    }\r\n  }\r\n}\r\n.btn {\r\n  display: inline-block;\r\n  padding: 0;\r\n  position: relative;\r\n  &::before,\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    height: 3px;\r\n    width: 100%;\r\n  }\r\n  &::before {\r\n    top: 0;\r\n    background: #c3a774;\r\n  }\r\n  &::after {\r\n    bottom: 0;\r\n    background: #8f6630;\r\n  }\r\n  &__body {\r\n    &::before,\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      top: 0;\r\n      height: 100%;\r\n      width: 3px;\r\n      background-image: linear-gradient(to top, #8f6630, #c3a774);\r\n    }\r\n    &::before {\r\n      left: 0;\r\n    }\r\n    &::after {\r\n      right: 0;\r\n    }\r\n    span {\r\n      min-height: 50px;\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      color: #fff;\r\n      font-size: 15px;\r\n      text-transform: uppercase;\r\n      font-family: \"PDFin\";\r\n      letter-spacing: 2px;\r\n      padding: 0 50px;\r\n      &::after {\r\n        content: \"\";\r\n        background-image: linear-gradient(\r\n          to top,\r\n          rgb(187, 156, 102) 0%,\r\n          rgba(187, 156, 102, 0) 100%\r\n        );\r\n        opacity: 0.06;\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 50%;\r\n        transition: height 0.5s ease 0s, opacity 0.5s ease 0s;\r\n      }\r\n    }\r\n  }\r\n  @media (min-width: 992px) {\r\n    &:hover {\r\n      .btn__body {\r\n        span {\r\n          &::after {\r\n            opacity: 0.3;\r\n            height: 100%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &_big {\r\n    .btn__body span {\r\n      font-size: 21px;\r\n      color: #000;\r\n      font-weight: 500;\r\n      letter-spacing: 0px;\r\n      padding: 0 10px;\r\n    }\r\n  }\r\n}\r\n.lots {\r\n  padding: 85px 0 63px;\r\n  &__container {\r\n    overflow: hidden;\r\n  }\r\n  &__header {\r\n    margin: 0 0 40px;\r\n  }\r\n  &__slider {\r\n  }\r\n}\r\n.block-header {\r\n  &__title {\r\n    margin: 0 0 20px 0;\r\n  }\r\n  &__decor {\r\n  }\r\n}\r\n.block-decor {\r\n  display: flex;\r\n  align-items: center;\r\n  &__items {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n    align-items: center;\r\n    &::before {\r\n      content: \"\";\r\n      height: 1px;\r\n      width: 100%;\r\n      flex: 1 1 auto;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: calc(15px * 0.72);\r\n      height: calc(25px * 0.72);\r\n      flex: 0 0 calc(25px * 0.72);\r\n      border: 1px solid #bb9c66;\r\n      transform: rotate(-45deg);\r\n      margin: 0 5px;\r\n    }\r\n    span {\r\n      display: flex;\r\n      align-items: center;\r\n      margin: 0 5px;\r\n      flex: 0 0 28px;\r\n      justify-content: space-between;\r\n      &::before {\r\n        content: \"\";\r\n        width: 10px;\r\n        height: 10px;\r\n        flex: 0 0 10px;\r\n        border-radius: 50%;\r\n        border: 1px solid #bb9c66;\r\n      }\r\n      &::after {\r\n        content: \"\";\r\n        width: calc(15px * 0.72);\r\n        height: calc(15px * 0.72);\r\n        flex: 0 0 calc(15px * 0.72);\r\n        border: 1px solid #bb9c66;\r\n        transform: rotate(-45deg);\r\n      }\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        flex-direction: row-reverse;\r\n      }\r\n    }\r\n  }\r\n  &__icon {\r\n    text-align: center;\r\n    flex: 0 0 145px;\r\n    @media (max-width: 767px) {\r\n      flex: 0 0 95px;\r\n    }\r\n    img {\r\n      max-width: 100%;\r\n      border-radius: 50%;\r\n      box-shadow: #bb9c66 0 14px 12px -8px;\r\n    }\r\n  }\r\n}\r\n.slider-lots {\r\n  &__body {\r\n    margin: 0 -50px 50px;\r\n    .swiper-slide {\r\n      height: auto;\r\n    }\r\n    @media (max-width: 975px) {\r\n      margin: 0 -15px 50px;\r\n    }\r\n  }\r\n  &__slide {\r\n    padding: 0 50px;\r\n    @media (max-width: 975px) {\r\n      padding: 0 15px;\r\n    }\r\n  }\r\n  &__control {\r\n  }\r\n}\r\n.control-slider-lots {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  &__arrow {\r\n    cursor: pointer;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: flex-end;\r\n    span {\r\n      background: url(\"img/icon/lots-slider_arrow.png\") left no-repeat;\r\n      flex: 0 0 108px;\r\n      width: 108px;\r\n      height: 35px;\r\n      @media (max-width: 450px) {\r\n        flex: 0 0 50px;\r\n      }\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      margin: 0 5px;\r\n      width: 15px;\r\n      height: 15px;\r\n      border-radius: 50%;\r\n      border: 1px solid #bb9c66;\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        transform: rotate(-180deg);\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    background: url(\"img/btn-decor_circul.png\") 0 0 no-repeat;\r\n    flex: 0 0 100px;\r\n    width: 100px;\r\n    height: 100px;\r\n    margin: 0 20px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    font-size: 21px;\r\n    color: #000;\r\n    font-weight: 500;\r\n    font-family: \"PDFin\";\r\n    text-transform: uppercase;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        border-radius: 50%;\r\n        background: linear-gradient(to top, #8f6630, #c3a774);\r\n      }\r\n    }\r\n  }\r\n}\r\n.lot {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100%;\r\n  text-align: center;\r\n  &__header {\r\n    text-align: center;\r\n    margin: 0 0 30px 0;\r\n    position: relative;\r\n  }\r\n  &__image {\r\n    display: block;\r\n    border: 3px solid #bb9c66;\r\n    padding: 0 0 98% 0;\r\n  }\r\n  &__timer {\r\n  }\r\n  &__title {\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    color: #000;\r\n    text-transform: uppercase;\r\n    font-family: \"PDFin\";\r\n    line-height: calc(25 / 21);\r\n    flex: 1 1 auto;\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 0 calc(27 / 21 * 1em) 0;\r\n    @media (max-width: 975px) {\r\n      font-size: 18px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n  &__info {\r\n  }\r\n  &__btn {\r\n    margin: 0 25px;\r\n  }\r\n}\r\n.timer-lot {\r\n  transform: translate(-50%, 50%);\r\n  width: 72px;\r\n  height: 72px;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  position: relative;\r\n  padding: 2px 0 0 0;\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 0;\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &::before {\r\n    content: \"\";\r\n    background: #fff;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    transform: rotate(-45deg);\r\n  }\r\n  &__icon {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__item {\r\n    font-family: \"PT Sans Narrow\";\r\n    font-size: 18px;\r\n  }\r\n}\r\n.info-lot {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin: 0 0 35px 0;\r\n  &__statistic {\r\n    flex: 0 0 50px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__icon {\r\n    width: calc(25px * 0.72);\r\n    height: calc(25px * 0.72);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    position: relative;\r\n    margin: 0 0 10px 0;\r\n    img {\r\n      position: relative;\r\n      z-index: 2;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 100%;\r\n      transform: rotate(-45deg);\r\n      background: #1c242a;\r\n    }\r\n  }\r\n  &__value {\r\n    font-size: 14px;\r\n    border-bottom: 1px solid #bb9c66;\r\n    min-width: 50px;\r\n  }\r\n  &__current-bet {\r\n    flex: 1 1 auto;\r\n    @media (max-width: 975px) {\r\n      flex: 0 0 auto;\r\n    }\r\n  }\r\n}\r\n.current-bet-info-lot {\r\n  padding: 0 5px;\r\n  position: relative;\r\n  @media (max-width: 975px) {\r\n    padding: 0 10px;\r\n  }\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    width: 72px;\r\n    height: 72px;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%) rotate(-45deg);\r\n    border: 1px solid #bb9c66;\r\n  }\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &__label {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__value {\r\n    font-family: \"Bravo\";\r\n    font-size: 50px;\r\n    padding: 0 0 5px 0;\r\n    white-space: nowrap;\r\n    @media (max-width: 975px) {\r\n      font-size: 35px;\r\n    }\r\n  }\r\n  &__currency {\r\n  }\r\n}\r\n.categories {\r\n  &__container {\r\n    overflow: hidden;\r\n    position: relative;\r\n    margin: 0 auto 85px;\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      bottom: 0;\r\n      height: 45px;\r\n      width: 100%;\r\n      background: #fff;\r\n    }\r\n  }\r\n  &__row {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    margin: 0 -50px;\r\n    position: relative;\r\n    padding: 34px 0 0 0;\r\n    &::before,\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      top: 4px;\r\n      width: calc(24px * 0.72);\r\n      height: calc(24px * 0.72);\r\n      flex: 0 0 calc(24px * 0.72);\r\n      transform: translate(-50%, 0) rotate(-45deg);\r\n      border: 1px solid #bb9c66;\r\n    }\r\n    &::before {\r\n      left: 33.333%;\r\n      @media (max-width: 975px) {\r\n        left: 50%;\r\n      }\r\n      @media (max-width: 975px) {\r\n        display: none;\r\n      }\r\n    }\r\n    &::after {\r\n      left: 66.667%;\r\n      margin: 0 1px 0 0;\r\n      @media (max-width: 975px) {\r\n        display: none;\r\n      }\r\n    }\r\n  }\r\n  &__column {\r\n    padding: 0 50px 25px;\r\n    flex: 0 1 33.333%;\r\n    margin: 0 0 25px 0;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    &::before {\r\n      content: \"\";\r\n      background: #bb9c66;\r\n      width: 10px;\r\n      height: 10px;\r\n      flex: 0 0 10px;\r\n      border-radius: 50%;\r\n      position: absolute;\r\n      left: 50%;\r\n      bottom: -5px;\r\n      transform: translate(-50%, 0);\r\n    }\r\n    @media (max-width: 975px) {\r\n      flex: 0 1 50%;\r\n    }\r\n    @media (max-width: 650px) {\r\n      flex: 1 1 100%;\r\n    }\r\n  }\r\n  &__item {\r\n  }\r\n  &__decor {\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0;\r\n    width: 24px;\r\n    height: calc(100% + 9px);\r\n    transform: translate(50%, 0);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    z-index: 5;\r\n    &::before {\r\n      content: \"\";\r\n      width: 1px;\r\n      flex: 1 1 auto;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: calc(24px * 0.72);\r\n      height: calc(24px * 0.72);\r\n      flex: 0 0 calc(24px * 0.72);\r\n      transform: rotate(-45deg);\r\n      border: 1px solid #bb9c66;\r\n      margin: 15px 0 0 0;\r\n    }\r\n    span {\r\n      flex: 1 1 auto;\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      &::before {\r\n        content: \"\";\r\n        background: #bb9c66;\r\n        width: 10px;\r\n        height: 10px;\r\n        flex: 0 0 10px;\r\n        border-radius: 50%;\r\n        margin: 20px 0;\r\n      }\r\n      &::after {\r\n        content: \"\";\r\n        width: 1px;\r\n        flex: 1 1 auto;\r\n        background: #bb9c66;\r\n      }\r\n    }\r\n  }\r\n}\r\n.item {\r\n  position: relative;\r\n  padding: 30px 30px 40px;\r\n  text-align: center;\r\n  height: 250px;\r\n  width: 250px;\r\n  border-radius: 50%;\r\n  overflow: hidden;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  @media (min-width: 992px) {\r\n    &:hover {\r\n      .item__bg {\r\n        transform: scale(1.1);\r\n        &::after {\r\n          opacity: 0.8;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    position: absolute;\r\n    z-index: 5;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n  }\r\n  &__icon {\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 0 22px 0;\r\n  }\r\n  &__title {\r\n    letter-spacing: 2.1px;\r\n    position: relative;\r\n    z-index: 2;\r\n    color: #fff;\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\r\n    font-family: \"PDFin\";\r\n    flex: 1 1 auto;\r\n    line-height: calc(25 / 21);\r\n  }\r\n  &__decor {\r\n    text-align: center;\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &__bg {\r\n    transition: transform 0.5s ease 0s;\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    &::after {\r\n      content: \"\";\r\n      transition: opacity 0.5s ease 0s;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 100%;\r\n      top: 0;\r\n      left: 0;\r\n      background: rgba($color: #1c242a, $alpha: 0.75);\r\n    }\r\n  }\r\n}\r\n.text-categories {\r\n  color: #333;\r\n  font-size: 15px;\r\n  line-height: calc(25 / 15);\r\n  @media (max-width: 767px) {\r\n    text-align: justify;\r\n  }\r\n  p {\r\n    margin: 0 0 25px 0;\r\n    &:last-child {\r\n      margin: 0;\r\n    }\r\n  }\r\n  &__body {\r\n    padding: 10px 0 25px 130px;\r\n    background: url(img/mini-pattern.png) 0 0 no-repeat,\r\n      url(img/pattern.png) 0 5px repeat-y;\r\n  }\r\n}\r\n","*{\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tborder: 0;\r\n}\r\n*, *::before, *::after {box-sizing: border-box;}\r\n:focus,:active{outline: none;}\r\na:focus,a:active{outline: none;}\r\n\r\nnav,footer,header,aside{display: block;}\r\n\r\nhtml,body{\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tfont-size: 100%;\r\n\tline-height: 1;\r\n\tfont-size: 14px;\r\n\t-ms-text-size-adjust: 100%;\r\n\t-moz-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%;\r\n}\r\ninput,button,textarea{font-family: inherit;}\r\n\r\ninput::-ms-clear{display: none;}\r\nbutton{cursor: pointer;}\r\nbutton::-msz-focus-inner {padding: 0; border: 0;}\r\na,-a:visited{text-decoration: none;}\r\na:hover{text-decoration: none;}\r\nul{list-style: none;}\r\nli{list-style: none;}\r\nimg{vertical-align: none;}\r\n\r\nh1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}","@font-face {\r\n  font-family: \"Bravo\";\r\n  src: url(\"fonts/BravoRGRegular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"CeremoniousOne\";\r\n  src: url(\"fonts/ceremonious_one.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-regular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-medium.ttf\") format(\"truetype\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}\r\n",":root {\r\n  --main-bg-color: brown;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11727,6 +11953,25 @@ var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(
 var ___HTML_LOADER_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ./img/icon/palm.png */ "./src/img/icon/palm.png"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ./img/lots/02.png */ "./src/img/lots/02.png"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ./img/lots/03.png */ "./src/img/lots/03.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/01/icon.png */ "./src/img/categories/01/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/decor_mini.png */ "./src/img/categories/decor_mini.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_14___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/01/beckground.png */ "./src/img/categories/01/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_15___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/02/icon.png */ "./src/img/categories/02/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_16___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/02/beckground.png */ "./src/img/categories/02/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_17___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/03/icon.png */ "./src/img/categories/03/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_18___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/03/beckground.png */ "./src/img/categories/03/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_19___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/04/icon.png */ "./src/img/categories/04/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_20___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/04/beckground.png */ "./src/img/categories/04/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_21___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/05/icon.png */ "./src/img/categories/05/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_22___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/05/beckground.png */ "./src/img/categories/05/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_23___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/06/icon.png */ "./src/img/categories/06/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_24___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/06/beckground.png */ "./src/img/categories/06/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_25___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/07/icon.png */ "./src/img/categories/07/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_26___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/07/beckground.png */ "./src/img/categories/07/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_27___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/08/icon.png */ "./src/img/categories/08/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_28___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/08/beckground.png */ "./src/img/categories/08/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_29___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/09/icon.png */ "./src/img/categories/09/icon.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_30___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/09/beckground.png */ "./src/img/categories/09/beckground.png"), __webpack_require__.b);
 // Module
 var code = `<!DOCTYPE html>
 <html lang="en">
@@ -11870,7 +12115,7 @@ var code = `<!DOCTYPE html>
             ></div>
           </div>
         </div>
-        <div class="lots">
+        <section class="lots">
           <div class="lots__container _container">
             <div class="lots__header block-header">
               <div class="block-header__title title">
@@ -12080,6 +12325,187 @@ var code = `<!DOCTYPE html>
                 >
                   <span></span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="categories">
+          <div class="categories__container _container">
+            <div class="categories__row">
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_12___}" alt="" />
+                  </div>
+                  <div class="item__title">Часы</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_14___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_15___}" alt="" />
+                  </div>
+                  <div class="item__title">Ювелирные Изделия</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_16___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_17___}" alt="" />
+                  </div>
+                  <div class="item__title">Автотранспорт и лодки</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_18___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_19___}" alt="" />
+                  </div>
+                  <div class="item__title">Аксуссуары</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_20___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_21___}" alt="" />
+                  </div>
+                  <div class="item__title">Недвижимость</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_22___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_23___}" alt="" />
+                  </div>
+                  <div class="item__title">Hi-Tech</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_24___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_25___}" alt="" />
+                  </div>
+                  <div class="item__title">Одежда и обувь</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_26___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_27___}" alt="" />
+                  </div>
+                  <div class="item__title">Предметы искусства</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_28___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+              <div class="categories__column">
+                <div class="categories__item item">
+                  <a href="" class="item__link"></a>
+                  <div class="item__icon">
+                    <img src="${___HTML_LOADER_IMPORT_29___}" alt="" />
+                  </div>
+                  <div class="item__title">АЛкоголь и еда</div>
+                  <div class="item__decor">
+                    <img src="${___HTML_LOADER_IMPORT_13___}" alt="" />
+                  </div>
+                  <div class="item__bg _ibg">
+                    <img src="${___HTML_LOADER_IMPORT_30___}" alt="" />
+                  </div>
+                </div>
+                <div class="categories__decor"><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="categories__text text-categories">
+            <div class="text-categories__container _container">
+              <div class="text-categories__body">
+                <p>
+                  Мы рады приветствовать вас на уникальной Лакшери аукционе,
+                  здесь вы сможете найти достойные для себя лоты. Аукцион по
+                  продаже недвижимости во многих развитых странах являюется
+                  основным инструментом купли-продажи коммерческой, жилой, и
+                  муниципальной недвижимости, в том числе квартир. Общий объем
+                  сделок в мире на аукционах по продаже недвижимости варьируется
+                  от 30% до 80%. Для России аукцион недвижимости является
+                  относительно новым и обретает все большую популярность.
+                </p>
+                <p>
+                  Мы рады приветствовать вас на уникальной Лакшери аукционе,
+                  здесь вы сможете найти достойные для себя лоты. Аукцион по
+                  продаже недвижимости во многих развитых странах являюется
+                  основным инструментом купли-продажи коммерческой, жилой, и
+                  муниципальной недвижимости, в том числе квартир. Общий объем
+                  сделок в мире на аукционах по продаже недвижимости варьируется
+                  от 30% до 80%. Для России аукцион недвижимости является
+                  относительно новым и обретает все большую популярность.
+                </p>
+                <p>
+                  Муниципальной недвижимости, в том числе квартир. Общий объем
+                  сделок в мире на аукционах по продаже недвижимости варьируется
+                  от 30% до 80%.
+                </p>
               </div>
             </div>
           </div>
@@ -12506,6 +12932,215 @@ module.exports = __webpack_require__.p + "assets/81d0d969347a2e3a259e.png";
 
 /***/ }),
 
+/***/ "./src/img/categories/01/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/01/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/1be45f722578a40e676c.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/01/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/01/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/27d2edc782cbdeed00ad.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/02/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/02/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/cb03ab05309cc70363c3.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/02/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/02/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/61e601ef243b8df61a01.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/03/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/03/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/f0b82b334fce3f2f20a5.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/03/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/03/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/f8ac20c1c0c5b1305a23.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/04/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/04/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/a4e8c544d51482df7b0d.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/04/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/04/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/8428c2d10c6c86968eb2.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/05/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/05/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/5fa3a84524956a717fa7.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/05/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/05/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/d26c69a8c567799fa8e4.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/06/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/06/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/07ee90e9e9365450e8fe.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/06/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/06/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/0e4d8a0e4ebe14ef1a02.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/07/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/07/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/c77182d0859a6d6fe5aa.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/07/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/07/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/76d2a4bed7979516ddc5.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/08/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/08/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/de2c36ef548dab34499b.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/08/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/08/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/2443cf7d67f5357a9f17.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/09/beckground.png":
+/*!**********************************************!*\
+  !*** ./src/img/categories/09/beckground.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/077dd74717e8f1e29f50.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/09/icon.png":
+/*!****************************************!*\
+  !*** ./src/img/categories/09/icon.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/f264b94087fae8d1930a.png";
+
+/***/ }),
+
+/***/ "./src/img/categories/decor_mini.png":
+/*!*******************************************!*\
+  !*** ./src/img/categories/decor_mini.png ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/29934d7aeba535841630.png";
+
+/***/ }),
+
 /***/ "./src/img/decor.png":
 /*!***************************!*\
   !*** ./src/img/decor.png ***!
@@ -12679,6 +13314,28 @@ module.exports = __webpack_require__.p + "assets/09ccdd14e7f8a1d678bb.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/c80c0951914f80349ad4.png";
+
+/***/ }),
+
+/***/ "./src/img/mini-pattern.png":
+/*!**********************************!*\
+  !*** ./src/img/mini-pattern.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/657534444ce0254cbd9d.png";
+
+/***/ }),
+
+/***/ "./src/img/pattern.png":
+/*!*****************************!*\
+  !*** ./src/img/pattern.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/98493050180c657130d2.png";
 
 /***/ }),
 
@@ -23412,4 +24069,4 @@ ibg();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.9a1d7c4fc9083c8f2679.js.map
+//# sourceMappingURL=main.0f8e45101b2ae407f0e9.js.map
