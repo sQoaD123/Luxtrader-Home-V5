@@ -1,6 +1,6 @@
-import Swiper from "swiper";
+import Swiper from "swiper/bundle";
 import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
+import "swiper/css/bundle";
 
 let sliders = document.querySelectorAll("._slider");
 if (sliders) {
@@ -80,6 +80,26 @@ let slider_lots = new Swiper(".slider-lots__body", {
     768: {
       slidesPerView: 3,
     },
+  },
+  on: {
+    lazyImageReady: function () {
+      ibg();
+    },
+  },
+});
+let slider_quotes = new Swiper(".slider-quotes__body", {
+  effect: "fade",
+  crossFade: true,
+  observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoHeight: false,
+  speed: 1000,
+  loop: true,
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: ".control-slider-quotes__circle",
   },
   on: {
     lazyImageReady: function () {
