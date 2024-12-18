@@ -793,10 +793,16 @@ body {
 }
 .categories {
   margin: 0 0 70px 0;
+  @media (max-width: 767px) {
+    margin: 0 0 35px 0;
+  }
   &__container {
     overflow: hidden;
     position: relative;
     margin: 0 auto 85px;
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -1004,6 +1010,10 @@ body {
     padding: 10px 0 25px 130px;
     background: url(img/mini-pattern.png) 0 0 no-repeat,
       url(img/pattern.png) 0 5px repeat-y;
+    @media (max-width: 767px) {
+      padding: 10px 0 25px 0;
+      background: none;
+    }
   }
 }
 .services {
@@ -1095,15 +1105,26 @@ body {
 }
 .quotes {
   padding: 64px 0 75px;
+  @media (max-width: 767px) {
+    padding: 35px 0;
+  }
+  &__header {
+    margin: 0 0 20px 0;
+  }
 }
 .slider-quotes {
   &__body {
+    @media (max-width: 570px) {
+      margin: 0 0 30px 0;
+    }
     .swiper-slide {
       display: flex;
+      @media (max-width: 570px) {
+        display: block;
+      }
     }
   }
   &__slide {
-    display: flex;
     align-items: center;
     opacity: 0 !important;
     &.swiper-slide-active {
@@ -1190,4 +1211,152 @@ body {
       }
     }
   }
+}
+.info {
+  padding: 0 0 75px 0;
+  @media (max-width: 767px) {
+    padding: 0 0 35px 0;
+  }
+  &__row {
+    display: flex;
+    margin: 0 -22px;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+  &__column {
+    flex: 0 1 50%;
+    padding: 0 22px;
+    margin: 0 0 55px 0;
+    &:last-child {
+      margin: 0;
+      flex: 1 1 auto;
+    }
+    @media (max-width: 767px) {
+      margin: 0 0 30px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__item {
+    margin: 0 0 30px 0;
+    &:last-child {
+      margin: 0;
+    }
+    @media (max-width: 767px) {
+      margin: 0 0 20px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__date {
+    color: #bb9c66;
+    font-size: 12px;
+    margin: 0 0 5px 0;
+  }
+  &__label {
+    font-size: 15px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 0 5px 0;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: calc(21 / 15);
+  }
+}
+.title-info {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-family: "PDFin";
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 0 30px 0;
+  @media (max-width: 767px) {
+    margin: 0 0 15px 0;
+  }
+  span {
+    display: flex;
+    &:first-child {
+      margin: 0 15px 0 0;
+      picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+.subscribe {
+  &__body {
+    display: flex;
+    margin: 0 -22px;
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+  &__column {
+    padding: 0 22px;
+    flex: 0 1 50%;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: calc(21 / 15);
+    @media (max-width: 767px) {
+      margin: 0 0 25px 0;
+    }
+  }
+}
+.form-subscribe {
+  height: 50px;
+  border: 3px solid #bb9c66;
+  background: #fff;
+  display: flex;
+  &__input {
+    flex: 1 1 auto;
+  }
+  &__btn {
+    position: relative;
+    background: #fff;
+    flex: 0 0 95px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 1px;
+      height: 32px;
+      background: #bb9c66;
+    }
+    span {
+      background: url(img/icon/info/arrow.png) right no-repeat;
+      padding: 0 32px 0 0;
+      color: #1c242a;
+      font-family: "PDFin";
+      font-size: 21px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2.12px;
+    }
+  }
+}
+.input {
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0 25px;
+  font-size: 15px;
+  height: 100%;
+}
+textarea.input {
+  resize: none;
+  padding: 0 0;
 }
