@@ -819,9 +819,9 @@ try {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.mjs");
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
-/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.css");
+/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.css");
 
 
 
@@ -850,7 +850,7 @@ if (sliders) {
   slider_bild_callback();
 }
 function slider_bild_callback(params) {}
-let main_slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".main-slider__body", {
+let main_slider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".main-slider__body", {
   observer: true,
   observeParents: true,
   slidesPerView: 1,
@@ -877,7 +877,7 @@ let main_slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".main-slid
     }
   }
 });
-let slider_lots = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".slider-lots__body", {
+let slider_lots = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".slider-lots__body", {
   observer: true,
   observeParents: true,
   slidesPerView: 3,
@@ -900,6 +900,26 @@ let slider_lots = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".slider-lo
     768: {
       slidesPerView: 3
     }
+  },
+  on: {
+    lazyImageReady: function () {
+      ibg();
+    }
+  }
+});
+let slider_quotes = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".slider-quotes__body", {
+  effect: "fade",
+  crossFade: true,
+  observer: true,
+  observeParents: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoHeight: false,
+  speed: 1000,
+  loop: true,
+  modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+  navigation: {
+    nextEl: ".control-slider-quotes__circle"
   },
   on: {
     lazyImageReady: function () {
@@ -9966,10 +9986,10 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.css":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.css ***!
-  \*******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper-bundle.css":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper-bundle.css ***!
+  \**************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -10259,7 +10279,639 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/**
     transform: rotate(360deg);
   }
 }
-/* Slide styles end */`, "",{"version":3,"sources":["webpack://./node_modules/swiper/swiper.css"],"names":[],"mappings":"AAAA;;;;;;;;;;EAAA;AAYA,eAAA;AACA;EACE,2BAAA;EACA,4CAAA;EACA,gBAAA;EACA,kBAAA;AAAF;AAEA,aAAA;AACA;EACE,6BAAA;EACA;;;GAAA;AAGF;;AAEA;EACE,kBAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;EACA,UAAA;AACF;;AACA;EACE,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,gBAAA;EACA,gBAAA;EACA,UAAA;EACA,6BAAA;EACA,UAAA;EACA,cAAA;AAEF;;AAAA;EACE,sBAAA;AAGF;;AADA;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,aAAA;EACA,8BAAA;EACA,gCAAA;EAAA,mCAAA;EAAA,qFAAA;EACA,uBAAA;AAIF;;AAFA;;;EAGE,iCAAA;AAKF;;AAHA;EACE,mBAAA;AAMF;;AAJA;EACE,mBAAA;AAOF;;AALA;EACE,cAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,8BAAA;EACA,cAAA;AAQF;;AANA;EACE,kBAAA;AASF;;AAPA,gBAAA;AACA;;EAEE,YAAA;AAUF;;AARA;EACE,uBAAA;EACA,sCAAA;AAWF;;AATA;EACE,wBAAA;EAEQ,2BAAA;AAYV;;AAVA,eAAA;AACA;EACE,mBAAA;AAaF;;AAXA;EACE,4BAAA;AAcF;;AAZA;EACE,mBAAA;AAeF;;AAbA;;EAEE,4BAAA;AAgBF;;AAdA,aAAA;AACA;EACE,cAAA;EACA,qBAAA;EACA,gBAAA;EACA,wBAAA;EACA,mCAAA;AAiBF;;AAfA;EACE,aAAA;AAkBF;;AAhBA;EACE,8BAAA;AAmBF;;AAjBA;EACE,6BAAA;AAoBF;;AAlBA;EACE,6BAAA;AAqBF;;AAnBA;EACE,sBAAA;AAsBF;;AApBA;EACE,uBAAA;AAuBF;;AArBA;EACE,WAAA;EACA,cAAA;EACA,WAAA;AAwBF;;AAtBA;EACE,gCAAA;EACA,wBAAA;AAyBF;;AAvBA;EACE,iDAAA;AA0BF;;AAxBA;EACE,YAAA;EACA,eAAA;EACA,0CAAA;AA2BF;;AAzBA;EACE,gDAAA;AA4BF;;AA1BA;EACE,WAAA;EACA,cAAA;EACA,2CAAA;AA6BF;;AA3BA,uBAAA;AACA,eAAA;AACA;;;;;;;;;;EAUE,kBAAA;EACA,OAAA;EACA,MAAA;EACA,WAAA;EACA,YAAA;EACA,oBAAA;EACA,WAAA;AA8BF;;AA5BA;EACE,+BAAA;AA+BF;;AA7BA;EACE,gFAAA;AAgCF;;AA9BA;EACE,iFAAA;AAiCF;;AA/BA;EACE,+EAAA;AAkCF;;AAhCA;EACE,kFAAA;AAmCF;;AAjCA;EACE,WAAA;EACA,YAAA;EACA,kBAAA;EACA,SAAA;EACA,QAAA;EACA,kBAAA;EACA,iBAAA;EACA,WAAA;EACA,qBAAA;EACA,sBAAA;EACA,yBAAA;EAAA,0EAAA;EACA,kBAAA;EACA,6BAAA;AAoCF;;AAlCA;;EAEE,mDAAA;AAqCF;;AAnCA;EACE,8BAAA;AAsCF;;AApCA;EACE,8BAAA;AAuCF;;AArCA;EACE;IACE,uBAAA;EAwCF;EAtCA;IACE,yBAAA;EAwCF;AACF;AAtCA,qBAAA","sourcesContent":["/**\n * Swiper 11.1.15\n * Most modern mobile touch slider and framework with hardware accelerated transitions\n * https://swiperjs.com\n *\n * Copyright 2014-2024 Vladimir Kharlampidi\n *\n * Released under the MIT License\n *\n * Released on: November 18, 2024\n */\n\n/* FONT_START */\n@font-face {\n  font-family: 'swiper-icons';\n  src: url('data:application/font-woff;charset=utf-8;base64, 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');\n  font-weight: 400;\n  font-style: normal;\n}\n/* FONT_END */\n:root {\n  --swiper-theme-color: #007aff;\n  /*\n  --swiper-preloader-color: var(--swiper-theme-color);\n  --swiper-wrapper-transition-timing-function: initial;\n  */\n}\n:host {\n  position: relative;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  z-index: 1;\n}\n.swiper {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  /* Fix of Webkit flickering */\n  z-index: 1;\n  display: block;\n}\n.swiper-vertical > .swiper-wrapper {\n  flex-direction: column;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: flex;\n  transition-property: transform;\n  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);\n  box-sizing: content-box;\n}\n.swiper-android .swiper-slide,\n.swiper-ios .swiper-slide,\n.swiper-wrapper {\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-horizontal {\n  touch-action: pan-y;\n}\n.swiper-vertical {\n  touch-action: pan-x;\n}\n.swiper-slide {\n  flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transition-property: transform;\n  display: block;\n}\n.swiper-slide-invisible-blank {\n  visibility: hidden;\n}\n/* Auto Height */\n.swiper-autoheight,\n.swiper-autoheight .swiper-slide {\n  height: auto;\n}\n.swiper-autoheight .swiper-wrapper {\n  align-items: flex-start;\n  transition-property: transform, height;\n}\n.swiper-backface-hidden .swiper-slide {\n  transform: translateZ(0);\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n/* 3D Effects */\n.swiper-3d.swiper-css-mode .swiper-wrapper {\n  perspective: 1200px;\n}\n.swiper-3d .swiper-wrapper {\n  transform-style: preserve-3d;\n}\n.swiper-3d {\n  perspective: 1200px;\n}\n.swiper-3d .swiper-slide,\n.swiper-3d .swiper-cube-shadow {\n  transform-style: preserve-3d;\n}\n/* CSS Mode */\n.swiper-css-mode > .swiper-wrapper {\n  overflow: auto;\n  scrollbar-width: none;\n  /* For Firefox */\n  -ms-overflow-style: none;\n  /* For Internet Explorer and Edge */\n}\n.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {\n  display: none;\n}\n.swiper-css-mode > .swiper-wrapper > .swiper-slide {\n  scroll-snap-align: start start;\n}\n.swiper-css-mode.swiper-horizontal > .swiper-wrapper {\n  scroll-snap-type: x mandatory;\n}\n.swiper-css-mode.swiper-vertical > .swiper-wrapper {\n  scroll-snap-type: y mandatory;\n}\n.swiper-css-mode.swiper-free-mode > .swiper-wrapper {\n  scroll-snap-type: none;\n}\n.swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {\n  scroll-snap-align: none;\n}\n.swiper-css-mode.swiper-centered > .swiper-wrapper::before {\n  content: '';\n  flex-shrink: 0;\n  order: 9999;\n}\n.swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {\n  scroll-snap-align: center center;\n  scroll-snap-stop: always;\n}\n.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {\n  margin-inline-start: var(--swiper-centered-offset-before);\n}\n.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper::before {\n  height: 100%;\n  min-height: 1px;\n  width: var(--swiper-centered-offset-after);\n}\n.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {\n  margin-block-start: var(--swiper-centered-offset-before);\n}\n.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper::before {\n  width: 100%;\n  min-width: 1px;\n  height: var(--swiper-centered-offset-after);\n}\n/* Slide styles start */\n/* 3D Shadows */\n.swiper-3d .swiper-slide-shadow,\n.swiper-3d .swiper-slide-shadow-left,\n.swiper-3d .swiper-slide-shadow-right,\n.swiper-3d .swiper-slide-shadow-top,\n.swiper-3d .swiper-slide-shadow-bottom,\n.swiper-3d .swiper-slide-shadow,\n.swiper-3d .swiper-slide-shadow-left,\n.swiper-3d .swiper-slide-shadow-right,\n.swiper-3d .swiper-slide-shadow-top,\n.swiper-3d .swiper-slide-shadow-bottom {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  z-index: 10;\n}\n.swiper-3d .swiper-slide-shadow {\n  background: rgba(0, 0, 0, 0.15);\n}\n.swiper-3d .swiper-slide-shadow-left {\n  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-3d .swiper-slide-shadow-right {\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-3d .swiper-slide-shadow-top {\n  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-3d .swiper-slide-shadow-bottom {\n  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-lazy-preloader {\n  width: 42px;\n  height: 42px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -21px;\n  margin-top: -21px;\n  z-index: 10;\n  transform-origin: 50%;\n  box-sizing: border-box;\n  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));\n  border-radius: 50%;\n  border-top-color: transparent;\n}\n.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,\n.swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader {\n  animation: swiper-preloader-spin 1s infinite linear;\n}\n.swiper-lazy-preloader-white {\n  --swiper-preloader-color: #fff;\n}\n.swiper-lazy-preloader-black {\n  --swiper-preloader-color: #000;\n}\n@keyframes swiper-preloader-spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/* Slide styles end */\n"],"sourceRoot":""}]);
+/* Slide styles end */
+.swiper-virtual .swiper-slide {
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.swiper-virtual.swiper-css-mode .swiper-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.swiper-virtual.swiper-css-mode.swiper-horizontal .swiper-wrapper::after {
+  height: 1px;
+  width: var(--swiper-virtual-size);
+}
+
+.swiper-virtual.swiper-css-mode.swiper-vertical .swiper-wrapper::after {
+  width: 1px;
+  height: var(--swiper-virtual-size);
+}
+
+:root {
+  --swiper-navigation-size: 44px;
+  /*
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+  */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(44px / 44 * 27);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: 44px;
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - 44px / 2);
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007aff;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-prev.swiper-button-hidden,
+.swiper-button-next.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-navigation-disabled .swiper-button-prev,
+.swiper-navigation-disabled .swiper-button-next {
+  display: none !important;
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform-origin: center;
+}
+
+.swiper-rtl .swiper-button-prev svg,
+.swiper-rtl .swiper-button-next svg {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 10px;
+  left: var(--swiper-navigation-sides-offset, 10px);
+  right: auto;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 10px;
+  right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+}
+
+.swiper-button-lock {
+  display: none;
+}
+
+/* Navigation font start */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 44px;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-feature-settings: ;
+  font-variant: normal;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 10px;
+  right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+}
+
+/* Navigation font end */
+:root {
+  /*
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-left: auto;
+  --swiper-pagination-right: 8px;
+  --swiper-pagination-bottom: 8px;
+  --swiper-pagination-top: auto;
+  --swiper-pagination-fraction-color: inherit;
+  --swiper-pagination-progressbar-bg-color: rgba(0,0,0,0.25);
+  --swiper-pagination-progressbar-size: 4px;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-border-radius: 50%;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+  */
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+.swiper-pagination-disabled > .swiper-pagination,
+.swiper-pagination.swiper-pagination-disabled {
+  display: none !important;
+}
+
+/* Common Styles */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 8px;
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: auto;
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+/* Bullets */
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+  font-size: 0;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: scale(0.33);
+  position: relative;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  transform: scale(0.66);
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  transform: scale(0.33);
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+  height: 8px;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  display: inline-block;
+  border-radius: 50%;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: #000;
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
+  opacity: 0.2;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet:only-child {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #007aff;
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+  right: 8px;
+  right: var(--swiper-pagination-right, 8px);
+  left: auto;
+  left: var(--swiper-pagination-left, auto);
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+}
+
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 6px 0;
+  margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;
+  display: block;
+}
+
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+}
+
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  display: inline-block;
+  transition: 200ms transform, 200ms top;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 4px;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms left;
+}
+
+.swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms right;
+}
+
+/* Fraction */
+.swiper-pagination-fraction {
+  color: inherit;
+  color: var(--swiper-pagination-fraction-color, inherit);
+}
+
+/* Progress */
+.swiper-pagination-progressbar {
+  background: rgba(0, 0, 0, 0.25);
+  background: var(--swiper-pagination-progressbar-bg-color, rgba(0, 0, 0, 0.25));
+  position: absolute;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #007aff;
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: left top;
+}
+
+.swiper-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  transform-origin: right top;
+}
+
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+  width: 100%;
+  height: 4px;
+  height: var(--swiper-pagination-progressbar-size, 4px);
+  left: 0;
+  top: 0;
+}
+
+.swiper-vertical > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-vertical,
+.swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite {
+  width: 4px;
+  width: var(--swiper-pagination-progressbar-size, 4px);
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.swiper-pagination-lock {
+  display: none;
+}
+
+:root {
+  /*
+  --swiper-scrollbar-border-radius: 10px;
+  --swiper-scrollbar-top: auto;
+  --swiper-scrollbar-bottom: 4px;
+  --swiper-scrollbar-left: auto;
+  --swiper-scrollbar-right: 4px;
+  --swiper-scrollbar-sides-offset: 1%;
+  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
+  --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
+  --swiper-scrollbar-size: 4px;
+  */
+}
+
+.swiper-scrollbar {
+  border-radius: 10px;
+  border-radius: var(--swiper-scrollbar-border-radius, 10px);
+  position: relative;
+  touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+  background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));
+}
+
+.swiper-scrollbar-disabled > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-disabled {
+  display: none !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  left: 1%;
+  left: var(--swiper-scrollbar-sides-offset, 1%);
+  bottom: 4px;
+  bottom: var(--swiper-scrollbar-bottom, 4px);
+  top: auto;
+  top: var(--swiper-scrollbar-top, auto);
+  z-index: 50;
+  height: 4px;
+  height: var(--swiper-scrollbar-size, 4px);
+  width: calc(100% - 2 * 1%);
+  width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+}
+
+.swiper-vertical > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-vertical {
+  position: absolute;
+  left: auto;
+  left: var(--swiper-scrollbar-left, auto);
+  right: 4px;
+  right: var(--swiper-scrollbar-right, 4px);
+  top: 1%;
+  top: var(--swiper-scrollbar-sides-offset, 1%);
+  z-index: 50;
+  width: 4px;
+  width: var(--swiper-scrollbar-size, 4px);
+  height: calc(100% - 2 * 1%);
+  height: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  border-radius: var(--swiper-scrollbar-border-radius, 10px);
+  left: 0;
+  top: 0;
+}
+
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+
+.swiper-scrollbar-lock {
+  display: none;
+}
+
+/* Zoom container styles start */
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-zoom-container > img,
+.swiper-zoom-container > svg,
+.swiper-zoom-container > canvas {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Zoom container styles end */
+.swiper-slide-zoomed {
+  cursor: move;
+  touch-action: none;
+}
+
+/* a11y */
+.swiper .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-grid > .swiper-wrapper {
+  flex-wrap: wrap;
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.swiper-fade.swiper-free-mode .swiper-slide {
+  transition-timing-function: ease-out;
+}
+
+.swiper-fade .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+
+.swiper-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-fade .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper.swiper-cube {
+  overflow: visible;
+}
+
+.swiper-cube .swiper-slide {
+  pointer-events: none;
+  backface-visibility: hidden;
+  z-index: 1;
+  visibility: hidden;
+  transform-origin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-cube .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-cube.swiper-rtl .swiper-slide {
+  transform-origin: 100% 0;
+}
+
+.swiper-cube .swiper-slide-active,
+.swiper-cube .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-cube .swiper-slide-active,
+.swiper-cube .swiper-slide-next,
+.swiper-cube .swiper-slide-prev {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.swiper-cube .swiper-cube-shadow {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.swiper-cube .swiper-cube-shadow:before {
+  content: "";
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  filter: blur(50px);
+}
+
+.swiper-cube .swiper-slide-next + .swiper-slide {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Cube slide shadows start */
+.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-top,
+.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-bottom,
+.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-left,
+.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-right {
+  z-index: 0;
+  backface-visibility: hidden;
+}
+
+/* Cube slide shadows end */
+.swiper.swiper-flip {
+  overflow: visible;
+}
+
+.swiper-flip .swiper-slide {
+  pointer-events: none;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.swiper-flip .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-flip .swiper-slide-active,
+.swiper-flip .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+/* Flip slide shadows start */
+.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-top,
+.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-bottom,
+.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-left,
+.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-right {
+  z-index: 0;
+  backface-visibility: hidden;
+}
+
+/* Flip slide shadows end */
+.swiper-creative .swiper-slide {
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition-property: transform, opacity, height;
+}
+
+.swiper.swiper-cards {
+  overflow: visible;
+}
+
+.swiper-cards .swiper-slide {
+  transform-origin: center bottom;
+  backface-visibility: hidden;
+  overflow: hidden;
+}`, "",{"version":3,"sources":["webpack://./node_modules/swiper/swiper-bundle.css"],"names":[],"mappings":"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","sourcesContent":["/**\n * Swiper 11.1.15\n * Most modern mobile touch slider and framework with hardware accelerated transitions\n * https://swiperjs.com\n *\n * Copyright 2014-2024 Vladimir Kharlampidi\n *\n * Released under the MIT License\n *\n * Released on: November 18, 2024\n */\n\n/* FONT_START */\n@font-face {\n  font-family: 'swiper-icons';\n  src: url('data:application/font-woff;charset=utf-8;base64, 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');\n  font-weight: 400;\n  font-style: normal;\n}\n/* FONT_END */\n:root {\n  --swiper-theme-color: #007aff;\n  /*\n  --swiper-preloader-color: var(--swiper-theme-color);\n  --swiper-wrapper-transition-timing-function: initial;\n  */\n}\n:host {\n  position: relative;\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  z-index: 1;\n}\n.swiper {\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  overflow: hidden;\n  list-style: none;\n  padding: 0;\n  /* Fix of Webkit flickering */\n  z-index: 1;\n  display: block;\n}\n.swiper-vertical > .swiper-wrapper {\n  flex-direction: column;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: flex;\n  transition-property: transform;\n  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);\n  box-sizing: content-box;\n}\n.swiper-android .swiper-slide,\n.swiper-ios .swiper-slide,\n.swiper-wrapper {\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-horizontal {\n  touch-action: pan-y;\n}\n.swiper-vertical {\n  touch-action: pan-x;\n}\n.swiper-slide {\n  flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n  transition-property: transform;\n  display: block;\n}\n.swiper-slide-invisible-blank {\n  visibility: hidden;\n}\n/* Auto Height */\n.swiper-autoheight,\n.swiper-autoheight .swiper-slide {\n  height: auto;\n}\n.swiper-autoheight .swiper-wrapper {\n  align-items: flex-start;\n  transition-property: transform, height;\n}\n.swiper-backface-hidden .swiper-slide {\n  transform: translateZ(0);\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n/* 3D Effects */\n.swiper-3d.swiper-css-mode .swiper-wrapper {\n  perspective: 1200px;\n}\n.swiper-3d .swiper-wrapper {\n  transform-style: preserve-3d;\n}\n.swiper-3d {\n  perspective: 1200px;\n}\n.swiper-3d .swiper-slide,\n.swiper-3d .swiper-cube-shadow {\n  transform-style: preserve-3d;\n}\n/* CSS Mode */\n.swiper-css-mode > .swiper-wrapper {\n  overflow: auto;\n  scrollbar-width: none;\n  /* For Firefox */\n  -ms-overflow-style: none;\n  /* For Internet Explorer and Edge */\n}\n.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {\n  display: none;\n}\n.swiper-css-mode > .swiper-wrapper > .swiper-slide {\n  scroll-snap-align: start start;\n}\n.swiper-css-mode.swiper-horizontal > .swiper-wrapper {\n  scroll-snap-type: x mandatory;\n}\n.swiper-css-mode.swiper-vertical > .swiper-wrapper {\n  scroll-snap-type: y mandatory;\n}\n.swiper-css-mode.swiper-free-mode > .swiper-wrapper {\n  scroll-snap-type: none;\n}\n.swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {\n  scroll-snap-align: none;\n}\n.swiper-css-mode.swiper-centered > .swiper-wrapper::before {\n  content: '';\n  flex-shrink: 0;\n  order: 9999;\n}\n.swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {\n  scroll-snap-align: center center;\n  scroll-snap-stop: always;\n}\n.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {\n  margin-inline-start: var(--swiper-centered-offset-before);\n}\n.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper::before {\n  height: 100%;\n  min-height: 1px;\n  width: var(--swiper-centered-offset-after);\n}\n.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {\n  margin-block-start: var(--swiper-centered-offset-before);\n}\n.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper::before {\n  width: 100%;\n  min-width: 1px;\n  height: var(--swiper-centered-offset-after);\n}\n/* Slide styles start */\n/* 3D Shadows */\n.swiper-3d .swiper-slide-shadow,\n.swiper-3d .swiper-slide-shadow-left,\n.swiper-3d .swiper-slide-shadow-right,\n.swiper-3d .swiper-slide-shadow-top,\n.swiper-3d .swiper-slide-shadow-bottom,\n.swiper-3d .swiper-slide-shadow,\n.swiper-3d .swiper-slide-shadow-left,\n.swiper-3d .swiper-slide-shadow-right,\n.swiper-3d .swiper-slide-shadow-top,\n.swiper-3d .swiper-slide-shadow-bottom {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  z-index: 10;\n}\n.swiper-3d .swiper-slide-shadow {\n  background: rgba(0, 0, 0, 0.15);\n}\n.swiper-3d .swiper-slide-shadow-left {\n  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-3d .swiper-slide-shadow-right {\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-3d .swiper-slide-shadow-top {\n  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-3d .swiper-slide-shadow-bottom {\n  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));\n}\n.swiper-lazy-preloader {\n  width: 42px;\n  height: 42px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -21px;\n  margin-top: -21px;\n  z-index: 10;\n  transform-origin: 50%;\n  box-sizing: border-box;\n  border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));\n  border-radius: 50%;\n  border-top-color: transparent;\n}\n.swiper:not(.swiper-watch-progress) .swiper-lazy-preloader,\n.swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader {\n  animation: swiper-preloader-spin 1s infinite linear;\n}\n.swiper-lazy-preloader-white {\n  --swiper-preloader-color: #fff;\n}\n.swiper-lazy-preloader-black {\n  --swiper-preloader-color: #000;\n}\n@keyframes swiper-preloader-spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/* Slide styles end */\n.swiper-virtual .swiper-slide {\n  -webkit-backface-visibility: hidden;\n  transform: translateZ(0);\n}\n.swiper-virtual.swiper-css-mode .swiper-wrapper::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  top: 0;\n  pointer-events: none;\n}\n.swiper-virtual.swiper-css-mode.swiper-horizontal .swiper-wrapper::after {\n  height: 1px;\n  width: var(--swiper-virtual-size);\n}\n.swiper-virtual.swiper-css-mode.swiper-vertical .swiper-wrapper::after {\n  width: 1px;\n  height: var(--swiper-virtual-size);\n}\n:root {\n  --swiper-navigation-size: 44px;\n  /*\n  --swiper-navigation-top-offset: 50%;\n  --swiper-navigation-sides-offset: 10px;\n  --swiper-navigation-color: var(--swiper-theme-color);\n  */\n}\n.swiper-button-prev,\n.swiper-button-next {\n  position: absolute;\n  top: var(--swiper-navigation-top-offset, 50%);\n  width: calc(var(--swiper-navigation-size) / 44 * 27);\n  height: var(--swiper-navigation-size);\n  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));\n  z-index: 10;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--swiper-navigation-color, var(--swiper-theme-color));\n}\n.swiper-button-prev.swiper-button-disabled,\n.swiper-button-next.swiper-button-disabled {\n  opacity: 0.35;\n  cursor: auto;\n  pointer-events: none;\n}\n.swiper-button-prev.swiper-button-hidden,\n.swiper-button-next.swiper-button-hidden {\n  opacity: 0;\n  cursor: auto;\n  pointer-events: none;\n}\n.swiper-navigation-disabled .swiper-button-prev,\n.swiper-navigation-disabled .swiper-button-next {\n  display: none !important;\n}\n.swiper-button-prev svg,\n.swiper-button-next svg {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  transform-origin: center;\n}\n.swiper-rtl .swiper-button-prev svg,\n.swiper-rtl .swiper-button-next svg {\n  transform: rotate(180deg);\n}\n.swiper-button-prev,\n.swiper-rtl .swiper-button-next {\n  left: var(--swiper-navigation-sides-offset, 10px);\n  right: auto;\n}\n.swiper-button-next,\n.swiper-rtl .swiper-button-prev {\n  right: var(--swiper-navigation-sides-offset, 10px);\n  left: auto;\n}\n.swiper-button-lock {\n  display: none;\n}\n/* Navigation font start */\n.swiper-button-prev:after,\n.swiper-button-next:after {\n  font-family: swiper-icons;\n  font-size: var(--swiper-navigation-size);\n  text-transform: none !important;\n  letter-spacing: 0;\n  font-variant: initial;\n  line-height: 1;\n}\n.swiper-button-prev:after,\n.swiper-rtl .swiper-button-next:after {\n  content: 'prev';\n}\n.swiper-button-next,\n.swiper-rtl .swiper-button-prev {\n  right: var(--swiper-navigation-sides-offset, 10px);\n  left: auto;\n}\n.swiper-button-next:after,\n.swiper-rtl .swiper-button-prev:after {\n  content: 'next';\n}\n/* Navigation font end */\n:root {\n  /*\n  --swiper-pagination-color: var(--swiper-theme-color);\n  --swiper-pagination-left: auto;\n  --swiper-pagination-right: 8px;\n  --swiper-pagination-bottom: 8px;\n  --swiper-pagination-top: auto;\n  --swiper-pagination-fraction-color: inherit;\n  --swiper-pagination-progressbar-bg-color: rgba(0,0,0,0.25);\n  --swiper-pagination-progressbar-size: 4px;\n  --swiper-pagination-bullet-size: 8px;\n  --swiper-pagination-bullet-width: 8px;\n  --swiper-pagination-bullet-height: 8px;\n  --swiper-pagination-bullet-border-radius: 50%;\n  --swiper-pagination-bullet-inactive-color: #000;\n  --swiper-pagination-bullet-inactive-opacity: 0.2;\n  --swiper-pagination-bullet-opacity: 1;\n  --swiper-pagination-bullet-horizontal-gap: 4px;\n  --swiper-pagination-bullet-vertical-gap: 6px;\n  */\n}\n.swiper-pagination {\n  position: absolute;\n  text-align: center;\n  transition: 300ms opacity;\n  transform: translate3d(0, 0, 0);\n  z-index: 10;\n}\n.swiper-pagination.swiper-pagination-hidden {\n  opacity: 0;\n}\n.swiper-pagination-disabled > .swiper-pagination,\n.swiper-pagination.swiper-pagination-disabled {\n  display: none !important;\n}\n/* Common Styles */\n.swiper-pagination-fraction,\n.swiper-pagination-custom,\n.swiper-horizontal > .swiper-pagination-bullets,\n.swiper-pagination-bullets.swiper-pagination-horizontal {\n  bottom: var(--swiper-pagination-bottom, 8px);\n  top: var(--swiper-pagination-top, auto);\n  left: 0;\n  width: 100%;\n}\n/* Bullets */\n.swiper-pagination-bullets-dynamic {\n  overflow: hidden;\n  font-size: 0;\n}\n.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n  transform: scale(0.33);\n  position: relative;\n}\n.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {\n  transform: scale(1);\n}\n.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {\n  transform: scale(1);\n}\n.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {\n  transform: scale(0.66);\n}\n.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {\n  transform: scale(0.33);\n}\n.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {\n  transform: scale(0.66);\n}\n.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {\n  transform: scale(0.33);\n}\n.swiper-pagination-bullet {\n  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));\n  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));\n  display: inline-block;\n  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);\n  background: var(--swiper-pagination-bullet-inactive-color, #000);\n  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);\n}\nbutton.swiper-pagination-bullet {\n  border: none;\n  margin: 0;\n  padding: 0;\n  box-shadow: none;\n  -webkit-appearance: none;\n          appearance: none;\n}\n.swiper-pagination-clickable .swiper-pagination-bullet {\n  cursor: pointer;\n}\n.swiper-pagination-bullet:only-child {\n  display: none !important;\n}\n.swiper-pagination-bullet-active {\n  opacity: var(--swiper-pagination-bullet-opacity, 1);\n  background: var(--swiper-pagination-color, var(--swiper-theme-color));\n}\n.swiper-vertical > .swiper-pagination-bullets,\n.swiper-pagination-vertical.swiper-pagination-bullets {\n  right: var(--swiper-pagination-right, 8px);\n  left: var(--swiper-pagination-left, auto);\n  top: 50%;\n  transform: translate3d(0px, -50%, 0);\n}\n.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet,\n.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {\n  margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;\n  display: block;\n}\n.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,\n.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {\n  top: 50%;\n  transform: translateY(-50%);\n  width: 8px;\n}\n.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,\n.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n  display: inline-block;\n  transition: 200ms transform,\n        200ms top;\n}\n.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,\n.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {\n  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);\n}\n.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,\n.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {\n  left: 50%;\n  transform: translateX(-50%);\n  white-space: nowrap;\n}\n.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,\n.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n  transition: 200ms transform,\n        200ms left;\n}\n.swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {\n  transition: 200ms transform,\n    200ms right;\n}\n/* Fraction */\n.swiper-pagination-fraction {\n  color: var(--swiper-pagination-fraction-color, inherit);\n}\n/* Progress */\n.swiper-pagination-progressbar {\n  background: var(--swiper-pagination-progressbar-bg-color, rgba(0, 0, 0, 0.25));\n  position: absolute;\n}\n.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n  background: var(--swiper-pagination-color, var(--swiper-theme-color));\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  transform: scale(0);\n  transform-origin: left top;\n}\n.swiper-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n  transform-origin: right top;\n}\n.swiper-horizontal > .swiper-pagination-progressbar,\n.swiper-pagination-progressbar.swiper-pagination-horizontal,\n.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,\n.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {\n  width: 100%;\n  height: var(--swiper-pagination-progressbar-size, 4px);\n  left: 0;\n  top: 0;\n}\n.swiper-vertical > .swiper-pagination-progressbar,\n.swiper-pagination-progressbar.swiper-pagination-vertical,\n.swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,\n.swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite {\n  width: var(--swiper-pagination-progressbar-size, 4px);\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n.swiper-pagination-lock {\n  display: none;\n}\n:root {\n  /*\n  --swiper-scrollbar-border-radius: 10px;\n  --swiper-scrollbar-top: auto;\n  --swiper-scrollbar-bottom: 4px;\n  --swiper-scrollbar-left: auto;\n  --swiper-scrollbar-right: 4px;\n  --swiper-scrollbar-sides-offset: 1%;\n  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);\n  --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);\n  --swiper-scrollbar-size: 4px;\n  */\n}\n.swiper-scrollbar {\n  border-radius: var(--swiper-scrollbar-border-radius, 10px);\n  position: relative;\n  touch-action: none;\n  background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));\n}\n.swiper-scrollbar-disabled > .swiper-scrollbar,\n.swiper-scrollbar.swiper-scrollbar-disabled {\n  display: none !important;\n}\n.swiper-horizontal > .swiper-scrollbar,\n.swiper-scrollbar.swiper-scrollbar-horizontal {\n  position: absolute;\n  left: var(--swiper-scrollbar-sides-offset, 1%);\n  bottom: var(--swiper-scrollbar-bottom, 4px);\n  top: var(--swiper-scrollbar-top, auto);\n  z-index: 50;\n  height: var(--swiper-scrollbar-size, 4px);\n  width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));\n}\n.swiper-vertical > .swiper-scrollbar,\n.swiper-scrollbar.swiper-scrollbar-vertical {\n  position: absolute;\n  left: var(--swiper-scrollbar-left, auto);\n  right: var(--swiper-scrollbar-right, 4px);\n  top: var(--swiper-scrollbar-sides-offset, 1%);\n  z-index: 50;\n  width: var(--swiper-scrollbar-size, 4px);\n  height: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));\n}\n.swiper-scrollbar-drag {\n  height: 100%;\n  width: 100%;\n  position: relative;\n  background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, 0.5));\n  border-radius: var(--swiper-scrollbar-border-radius, 10px);\n  left: 0;\n  top: 0;\n}\n.swiper-scrollbar-cursor-drag {\n  cursor: move;\n}\n.swiper-scrollbar-lock {\n  display: none;\n}\n/* Zoom container styles start */\n.swiper-zoom-container {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n}\n.swiper-zoom-container > img,\n.swiper-zoom-container > svg,\n.swiper-zoom-container > canvas {\n  max-width: 100%;\n  max-height: 100%;\n  object-fit: contain;\n}\n/* Zoom container styles end */\n.swiper-slide-zoomed {\n  cursor: move;\n  touch-action: none;\n}\n/* a11y */\n.swiper .swiper-notification {\n  position: absolute;\n  left: 0;\n  top: 0;\n  pointer-events: none;\n  opacity: 0;\n  z-index: -1000;\n}\n.swiper-free-mode > .swiper-wrapper {\n  transition-timing-function: ease-out;\n  margin: 0 auto;\n}\n.swiper-grid > .swiper-wrapper {\n  flex-wrap: wrap;\n}\n.swiper-grid-column > .swiper-wrapper {\n  flex-wrap: wrap;\n  flex-direction: column;\n}\n.swiper-fade.swiper-free-mode .swiper-slide {\n  transition-timing-function: ease-out;\n}\n.swiper-fade .swiper-slide {\n  pointer-events: none;\n  transition-property: opacity;\n}\n.swiper-fade .swiper-slide .swiper-slide {\n  pointer-events: none;\n}\n.swiper-fade .swiper-slide-active {\n  pointer-events: auto;\n}\n.swiper-fade .swiper-slide-active .swiper-slide-active {\n  pointer-events: auto;\n}\n.swiper.swiper-cube {\n  overflow: visible;\n}\n.swiper-cube .swiper-slide {\n  pointer-events: none;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  z-index: 1;\n  visibility: hidden;\n  transform-origin: 0 0;\n  width: 100%;\n  height: 100%;\n}\n.swiper-cube .swiper-slide .swiper-slide {\n  pointer-events: none;\n}\n.swiper-cube.swiper-rtl .swiper-slide {\n  transform-origin: 100% 0;\n}\n.swiper-cube .swiper-slide-active,\n.swiper-cube .swiper-slide-active .swiper-slide-active {\n  pointer-events: auto;\n}\n.swiper-cube .swiper-slide-active,\n.swiper-cube .swiper-slide-next,\n.swiper-cube .swiper-slide-prev {\n  pointer-events: auto;\n  visibility: visible;\n}\n.swiper-cube .swiper-cube-shadow {\n  position: absolute;\n  left: 0;\n  bottom: 0px;\n  width: 100%;\n  height: 100%;\n  opacity: 0.6;\n  z-index: 0;\n}\n.swiper-cube .swiper-cube-shadow:before {\n  content: '';\n  background: #000;\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  filter: blur(50px);\n}\n.swiper-cube .swiper-slide-next + .swiper-slide {\n  pointer-events: auto;\n  visibility: visible;\n}\n/* Cube slide shadows start */\n.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-top,\n.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-bottom,\n.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-left,\n.swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-right {\n  z-index: 0;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n/* Cube slide shadows end */\n.swiper.swiper-flip {\n  overflow: visible;\n}\n.swiper-flip .swiper-slide {\n  pointer-events: none;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  z-index: 1;\n}\n.swiper-flip .swiper-slide .swiper-slide {\n  pointer-events: none;\n}\n.swiper-flip .swiper-slide-active,\n.swiper-flip .swiper-slide-active .swiper-slide-active {\n  pointer-events: auto;\n}\n/* Flip slide shadows start */\n.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-top,\n.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-bottom,\n.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-left,\n.swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-right {\n  z-index: 0;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n}\n/* Flip slide shadows end */\n.swiper-creative .swiper-slide {\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  overflow: hidden;\n  transition-property: transform, opacity, height;\n}\n.swiper.swiper-cards {\n  overflow: visible;\n}\n.swiper-cards .swiper-slide {\n  transform-origin: center bottom;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  overflow: hidden;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10301,6 +10953,7 @@ var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_requir
 var ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! img/btn-decor_circul.png */ "./src/img/btn-decor_circul.png"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! img/mini-pattern.png */ "./src/img/mini-pattern.png"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! img/pattern.png */ "./src/img/pattern.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_14___ = new URL(/* asset import */ __webpack_require__(/*! img/icon/refresh.png */ "./src/img/icon/refresh.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&display=swap&subset=cyrillic-ext);"]);
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular&display=swap&subset=cyrillic-ext);"]);
@@ -10318,6 +10971,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_
 var ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
 var ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
 var ___CSS_LOADER_URL_REPLACEMENT_13___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_13___);
+var ___CSS_LOADER_URL_REPLACEMENT_14___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_14___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -10738,8 +11392,14 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "PT Sans";
+  max-width: 100%;
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 ._container {
@@ -11234,9 +11894,11 @@ body {
 .lots__header {
   margin: 0 0 40px;
 }
+
 .block-header__title {
   margin: 0 0 20px 0;
 }
+
 .block-decor {
   display: flex;
   align-items: center;
@@ -11305,6 +11967,9 @@ body {
   border-radius: 50%;
   box-shadow: #bb9c66 0 14px 12px -8px;
 }
+.block-decor__icon_dark-shadow img {
+  box-shadow: #000 0 14px 12px -8px;
+}
 
 .slider-lots__body {
   margin: 0 -50px 50px;
@@ -11325,6 +11990,7 @@ body {
     padding: 0 15px;
   }
 }
+
 .control-slider-lots {
   display: flex;
   justify-content: center;
@@ -11543,6 +12209,10 @@ body {
   .current-bet-info-lot__value {
     font-size: 35px;
   }
+}
+
+.categories {
+  margin: 0 0 70px 0;
 }
 .categories__container {
   overflow: hidden;
@@ -11765,7 +12435,199 @@ body {
 .text-categories__body {
   padding: 10px 0 25px 130px;
   background: url(${___CSS_LOADER_URL_REPLACEMENT_12___}) 0 0 no-repeat, url(${___CSS_LOADER_URL_REPLACEMENT_13___}) 0 5px repeat-y;
-}`, "",{"version":3,"sources":["webpack://./src/libs/normalize.css","webpack://./src/index.scss","webpack://./src/style/_nullstyle.scss","webpack://./src/style/_fonts.scss","webpack://./src/style/_var.scss"],"names":[],"mappings":"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","sourcesContent":["/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   ========================================================================== */\n\n/**\n * 1. Correct the line height in all browsers.\n * 2. Prevent adjustments of font size after orientation changes in iOS.\n */\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers.\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Render the `main` element consistently in IE.\n */\n\nmain {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Remove the gray background on active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * 1. Remove the bottom border in Chrome 57-\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove the border on images inside links in IE 10.\n */\n\nimg {\n  border-style: none;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers.\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\n[type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Correct the padding in Firefox.\n */\n\nfieldset {\n  padding: 0.35em 0.75em 0.625em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\n * Remove the default vertical scrollbar in IE 10+.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10.\n * 2. Remove the padding in IE 10.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in Edge, IE 10+, and Firefox.\n */\n\ndetails {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Misc\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10+.\n */\n\ntemplate {\n  display: none;\n}\n\n/**\n * Add the correct display in IE 10.\n */\n\n[hidden] {\n  display: none;\n}\n","@use \"libs/normalize\";\r\n@use \"style/nullstyle\";\r\n@use \"style/fonts\";\r\n@use \"style/var\";\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&display=swap&subset=cyrillic-ext\");\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular&display=swap&subset=cyrillic-ext\");\r\n\r\nbody {\r\n  font-family: \"PT Sans\";\r\n  margin: 0;\r\n  overflow-x: hidden;\r\n}\r\n._container {\r\n  max-width: 980px;\r\n  margin: 0 auto;\r\n  padding: 0 15px;\r\n}\r\n._ibg {\r\n  background-position: center;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  img {\r\n    display: none;\r\n  }\r\n}\r\n._ibg img {\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n}\r\n.header {\r\n  background: #1c242a;\r\n  position: relative;\r\n  z-index: 50;\r\n  &__container {\r\n    position: relative;\r\n    display: flex;\r\n    align-items: center;\r\n    height: 75px;\r\n    @media (max-width: 767px) {\r\n      justify-content: space-between;\r\n    }\r\n  }\r\n  &__logo {\r\n    position: relative;\r\n    z-index: 2;\r\n    width: 144px;\r\n    @media (max-width: 767px) {\r\n      position: absolute;\r\n      left: 50%;\r\n      top: 50%;\r\n      transform: translate(-50%, -50%);\r\n    }\r\n  }\r\n}\r\n.menu {\r\n  padding: 0 0 0 3.16%;\r\n  flex: 1 1 auto;\r\n  @media (max-width: 767px) {\r\n    flex: 0 0 auto;\r\n  }\r\n  &__body {\r\n    @media (max-width: 767px) {\r\n      opacity: 0;\r\n      visibility: hidden;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      left: 0;\r\n      top: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n      &._active {\r\n        opacity: 1;\r\n        visibility: visible;\r\n      }\r\n    }\r\n  }\r\n  &__list {\r\n    display: flex;\r\n    justify-content: center;\r\n    li {\r\n      margin: 0 15px;\r\n    }\r\n    @media (max-width: 767px) {\r\n      display: block;\r\n      text-align: center;\r\n      li {\r\n        margin: 0 0 30px 0;\r\n        &:last-child {\r\n          margin: 0;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 1.4px;\r\n    color: #fff;\r\n    text-transform: uppercase;\r\n    @media (max-width: 767px) {\r\n      font-size: 24px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n}\r\n.icon-menu {\r\n  @media (max-width: 767px) {\r\n    position: relative;\r\n    width: 30px;\r\n    height: 18px;\r\n    cursor: pointer;\r\n    z-index: 5;\r\n    span {\r\n      top: calc(50% - 1px);\r\n      left: 0px;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 2px;\r\n      background: #bb9c66;\r\n      transition: all 0.3s ease 0s;\r\n      &:first-child {\r\n        top: 0;\r\n      }\r\n      &:last-child {\r\n        top: auto;\r\n        bottom: 0px;\r\n      }\r\n    }\r\n    &._active {\r\n      span {\r\n        opacity: 0;\r\n        &:first-child {\r\n          opacity: 1;\r\n          transform: rotate(-45deg);\r\n          top: 8px;\r\n        }\r\n        &:last-child {\r\n          opacity: 1;\r\n          transform: rotate(45deg);\r\n          bottom: 8px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n.actions-header {\r\n  display: flex;\r\n  align-items: center;\r\n  &__region {\r\n    position: relative;\r\n    z-index: 2;\r\n    @extend .menu__link;\r\n    padding: 0 0 0 30px;\r\n    background: url(\"img/icon/globe.png\") left no-repeat;\r\n    line-height: 18px;\r\n    min-width: 18px;\r\n    min-height: 18px;\r\n    @media (max-width: 890px) {\r\n      padding: 0;\r\n      span {\r\n        display: none;\r\n      }\r\n    }\r\n  }\r\n  &__user {\r\n    margin: 0 0 0 30px;\r\n    @media (max-width: 890px) {\r\n      margin: 0 0 0 15px;\r\n    }\r\n  }\r\n}\r\n.user-header {\r\n  &__icon {\r\n    position: relative;\r\n    z-index: 2;\r\n    cursor: pointer;\r\n  }\r\n  &__menu {\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 0.3s ease 0s;\r\n    top: 88px;\r\n    position: absolute;\r\n    right: 0;\r\n    background: #1c242a;\r\n    padding: 20px;\r\n    min-width: 176px;\r\n    @media (max-width: 767px) {\r\n      background: none;\r\n      text-align: center;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      top: 0;\r\n      left: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n    }\r\n    li {\r\n      margin: 0 0 8px 0;\r\n      @media (max-width: 767px) {\r\n        font-size: 24px;\r\n        margin: 0 0 30px 0;\r\n        font-family: \"PDFin\";\r\n        letter-spacing: 1.4px;\r\n        color: #fff;\r\n        text-transform: uppercase;\r\n      }\r\n      &:last-child {\r\n        margin: 0;\r\n      }\r\n    }\r\n    &._active {\r\n      opacity: 1;\r\n      visibility: visible;\r\n      top: 78px;\r\n      @media (max-width: 767px) {\r\n        top: 0;\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    position: relative;\r\n    z-index: 5;\r\n    color: #fff;\r\n    padding: 0 0 0 30px;\r\n    display: inline-block;\r\n    line-height: 18px;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n    &_1 {\r\n      background: url(\"img/icon/menu/01.png\") 1px center no-repeat;\r\n    }\r\n    &_2 {\r\n      background: url(\"img/icon/menu/02.png\") left center no-repeat;\r\n    }\r\n    &_3 {\r\n      background: url(\"img/icon/menu/03.png\") 4px center no-repeat;\r\n    }\r\n    &_4 {\r\n      background: url(\"img/icon/menu/04.png\") left center no-repeat;\r\n    }\r\n  }\r\n}\r\n.main {\r\n  position: relative;\r\n  &__control {\r\n    position: absolute;\r\n    z-index: 10;\r\n    left: 50%;\r\n    bottom: 0;\r\n    width: 100px;\r\n    height: 100px;\r\n    transform: translate(-50%, 50%);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    &::after {\r\n      content: \"\";\r\n      background: #fff;\r\n      position: absolute;\r\n      width: 70%;\r\n      height: 70%;\r\n      top: 50%;\r\n      left: 50%;\r\n      transform: translate(-50%, -50%) rotate(-45deg);\r\n    }\r\n  }\r\n}\r\n.main-slider {\r\n  position: relative;\r\n  overflow: hidden;\r\n  .swiper-slide {\r\n    height: auto;\r\n  }\r\n}\r\n.item-main-slider {\r\n  text-align: center;\r\n  padding: 30px 0 100px 0;\r\n  position: relative;\r\n  &__content {\r\n    position: relative;\r\n    z-index: 2;\r\n    height: 100%;\r\n  }\r\n  &__container {\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__bg {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n  }\r\n  &__text {\r\n    color: #fff;\r\n    font-size: 15px;\r\n    line-height: calc(25 / 15);\r\n    max-width: 700px;\r\n    margin: 25px auto 0;\r\n    flex: 1 1 auto;\r\n  }\r\n  &__btn {\r\n    margin: 55px 0 0 0;\r\n  }\r\n}\r\n.control-main-slider {\r\n  &__arrow {\r\n    position: relative;\r\n    z-index: 2;\r\n    background: url(\"img/icon/arrow.png\") 0 0 no-repeat;\r\n    width: 14px;\r\n    height: 24px;\r\n    cursor: pointer;\r\n    &_next {\r\n      transform: rotate(-180deg);\r\n    }\r\n  }\r\n  &__decor {\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 12px;\r\n    animation: rotate 5s infinite linear;\r\n  }\r\n}\r\n@keyframes rotate {\r\n  0% {\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n.title {\r\n  text-align: center;\r\n  &__item {\r\n    font-family: \"CeremoniousOne\";\r\n    color: #bb9c66;\r\n    font-size: 40px;\r\n    margin: 0 0 0.5em 0;\r\n  }\r\n  &__main {\r\n    font-size: 35px;\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 5.25px;\r\n    text-transform: uppercase;\r\n    font-weight: 500;\r\n    line-height: calc(40 / 35);\r\n    &_regular {\r\n      font-weight: 400;\r\n    }\r\n    &_w {\r\n      color: #fff;\r\n    }\r\n    @media (max-width: 767px) {\r\n      font-size: 30px;\r\n    }\r\n  }\r\n}\r\n.btn {\r\n  display: inline-block;\r\n  padding: 0;\r\n  position: relative;\r\n  &::before,\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    height: 3px;\r\n    width: 100%;\r\n  }\r\n  &::before {\r\n    top: 0;\r\n    background: #c3a774;\r\n  }\r\n  &::after {\r\n    bottom: 0;\r\n    background: #8f6630;\r\n  }\r\n  &__body {\r\n    &::before,\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      top: 0;\r\n      height: 100%;\r\n      width: 3px;\r\n      background-image: linear-gradient(to top, #8f6630, #c3a774);\r\n    }\r\n    &::before {\r\n      left: 0;\r\n    }\r\n    &::after {\r\n      right: 0;\r\n    }\r\n    span {\r\n      min-height: 50px;\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      color: #fff;\r\n      font-size: 15px;\r\n      text-transform: uppercase;\r\n      font-family: \"PDFin\";\r\n      letter-spacing: 2px;\r\n      padding: 0 50px;\r\n      &::after {\r\n        content: \"\";\r\n        background-image: linear-gradient(\r\n          to top,\r\n          rgb(187, 156, 102) 0%,\r\n          rgba(187, 156, 102, 0) 100%\r\n        );\r\n        opacity: 0.06;\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 50%;\r\n        transition: height 0.5s ease 0s, opacity 0.5s ease 0s;\r\n      }\r\n    }\r\n  }\r\n  @media (min-width: 992px) {\r\n    &:hover {\r\n      .btn__body {\r\n        span {\r\n          &::after {\r\n            opacity: 0.3;\r\n            height: 100%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &_big {\r\n    .btn__body span {\r\n      font-size: 21px;\r\n      color: #000;\r\n      font-weight: 500;\r\n      letter-spacing: 0px;\r\n      padding: 0 10px;\r\n    }\r\n  }\r\n}\r\n.lots {\r\n  padding: 85px 0 63px;\r\n  &__container {\r\n    overflow: hidden;\r\n  }\r\n  &__header {\r\n    margin: 0 0 40px;\r\n  }\r\n  &__slider {\r\n  }\r\n}\r\n.block-header {\r\n  &__title {\r\n    margin: 0 0 20px 0;\r\n  }\r\n  &__decor {\r\n  }\r\n}\r\n.block-decor {\r\n  display: flex;\r\n  align-items: center;\r\n  &__items {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n    align-items: center;\r\n    &::before {\r\n      content: \"\";\r\n      height: 1px;\r\n      width: 100%;\r\n      flex: 1 1 auto;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: calc(15px * 0.72);\r\n      height: calc(25px * 0.72);\r\n      flex: 0 0 calc(25px * 0.72);\r\n      border: 1px solid #bb9c66;\r\n      transform: rotate(-45deg);\r\n      margin: 0 5px;\r\n    }\r\n    span {\r\n      display: flex;\r\n      align-items: center;\r\n      margin: 0 5px;\r\n      flex: 0 0 28px;\r\n      justify-content: space-between;\r\n      &::before {\r\n        content: \"\";\r\n        width: 10px;\r\n        height: 10px;\r\n        flex: 0 0 10px;\r\n        border-radius: 50%;\r\n        border: 1px solid #bb9c66;\r\n      }\r\n      &::after {\r\n        content: \"\";\r\n        width: calc(15px * 0.72);\r\n        height: calc(15px * 0.72);\r\n        flex: 0 0 calc(15px * 0.72);\r\n        border: 1px solid #bb9c66;\r\n        transform: rotate(-45deg);\r\n      }\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        flex-direction: row-reverse;\r\n      }\r\n    }\r\n  }\r\n  &__icon {\r\n    text-align: center;\r\n    flex: 0 0 145px;\r\n    @media (max-width: 767px) {\r\n      flex: 0 0 95px;\r\n    }\r\n    img {\r\n      max-width: 100%;\r\n      border-radius: 50%;\r\n      box-shadow: #bb9c66 0 14px 12px -8px;\r\n    }\r\n  }\r\n}\r\n.slider-lots {\r\n  &__body {\r\n    margin: 0 -50px 50px;\r\n    .swiper-slide {\r\n      height: auto;\r\n    }\r\n    @media (max-width: 975px) {\r\n      margin: 0 -15px 50px;\r\n    }\r\n  }\r\n  &__slide {\r\n    padding: 0 50px;\r\n    @media (max-width: 975px) {\r\n      padding: 0 15px;\r\n    }\r\n  }\r\n  &__control {\r\n  }\r\n}\r\n.control-slider-lots {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  &__arrow {\r\n    cursor: pointer;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: flex-end;\r\n    span {\r\n      background: url(\"img/icon/lots-slider_arrow.png\") left no-repeat;\r\n      flex: 0 0 108px;\r\n      width: 108px;\r\n      height: 35px;\r\n      @media (max-width: 450px) {\r\n        flex: 0 0 50px;\r\n      }\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      margin: 0 5px;\r\n      width: 15px;\r\n      height: 15px;\r\n      border-radius: 50%;\r\n      border: 1px solid #bb9c66;\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        transform: rotate(-180deg);\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    background: url(\"img/btn-decor_circul.png\") 0 0 no-repeat;\r\n    flex: 0 0 100px;\r\n    width: 100px;\r\n    height: 100px;\r\n    margin: 0 20px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    font-size: 21px;\r\n    color: #000;\r\n    font-weight: 500;\r\n    font-family: \"PDFin\";\r\n    text-transform: uppercase;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        border-radius: 50%;\r\n        background: linear-gradient(to top, #8f6630, #c3a774);\r\n      }\r\n    }\r\n  }\r\n}\r\n.lot {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100%;\r\n  text-align: center;\r\n  &__header {\r\n    text-align: center;\r\n    margin: 0 0 30px 0;\r\n    position: relative;\r\n  }\r\n  &__image {\r\n    display: block;\r\n    border: 3px solid #bb9c66;\r\n    padding: 0 0 98% 0;\r\n  }\r\n  &__timer {\r\n  }\r\n  &__title {\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    color: #000;\r\n    text-transform: uppercase;\r\n    font-family: \"PDFin\";\r\n    line-height: calc(25 / 21);\r\n    flex: 1 1 auto;\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 0 calc(27 / 21 * 1em) 0;\r\n    @media (max-width: 975px) {\r\n      font-size: 18px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n  &__info {\r\n  }\r\n  &__btn {\r\n    margin: 0 25px;\r\n  }\r\n}\r\n.timer-lot {\r\n  transform: translate(-50%, 50%);\r\n  width: 72px;\r\n  height: 72px;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  position: relative;\r\n  padding: 2px 0 0 0;\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 0;\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &::before {\r\n    content: \"\";\r\n    background: #fff;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    transform: rotate(-45deg);\r\n  }\r\n  &__icon {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__item {\r\n    font-family: \"PT Sans Narrow\";\r\n    font-size: 18px;\r\n  }\r\n}\r\n.info-lot {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin: 0 0 35px 0;\r\n  &__statistic {\r\n    flex: 0 0 50px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__icon {\r\n    width: calc(25px * 0.72);\r\n    height: calc(25px * 0.72);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    position: relative;\r\n    margin: 0 0 10px 0;\r\n    img {\r\n      position: relative;\r\n      z-index: 2;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 100%;\r\n      transform: rotate(-45deg);\r\n      background: #1c242a;\r\n    }\r\n  }\r\n  &__value {\r\n    font-size: 14px;\r\n    border-bottom: 1px solid #bb9c66;\r\n    min-width: 50px;\r\n  }\r\n  &__current-bet {\r\n    flex: 1 1 auto;\r\n    @media (max-width: 975px) {\r\n      flex: 0 0 auto;\r\n    }\r\n  }\r\n}\r\n.current-bet-info-lot {\r\n  padding: 0 5px;\r\n  position: relative;\r\n  @media (max-width: 975px) {\r\n    padding: 0 10px;\r\n  }\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    width: 72px;\r\n    height: 72px;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%) rotate(-45deg);\r\n    border: 1px solid #bb9c66;\r\n  }\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &__label {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__value {\r\n    font-family: \"Bravo\";\r\n    font-size: 50px;\r\n    padding: 0 0 5px 0;\r\n    white-space: nowrap;\r\n    @media (max-width: 975px) {\r\n      font-size: 35px;\r\n    }\r\n  }\r\n  &__currency {\r\n  }\r\n}\r\n.categories {\r\n  &__container {\r\n    overflow: hidden;\r\n    position: relative;\r\n    margin: 0 auto 85px;\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      bottom: 0;\r\n      height: 45px;\r\n      width: 100%;\r\n      background: #fff;\r\n    }\r\n  }\r\n  &__row {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    margin: 0 -50px;\r\n    position: relative;\r\n    padding: 34px 0 0 0;\r\n    &::before,\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      top: 4px;\r\n      width: calc(24px * 0.72);\r\n      height: calc(24px * 0.72);\r\n      flex: 0 0 calc(24px * 0.72);\r\n      transform: translate(-50%, 0) rotate(-45deg);\r\n      border: 1px solid #bb9c66;\r\n    }\r\n    &::before {\r\n      left: 33.333%;\r\n      @media (max-width: 975px) {\r\n        left: 50%;\r\n      }\r\n      @media (max-width: 975px) {\r\n        display: none;\r\n      }\r\n    }\r\n    &::after {\r\n      left: 66.667%;\r\n      margin: 0 1px 0 0;\r\n      @media (max-width: 975px) {\r\n        display: none;\r\n      }\r\n    }\r\n  }\r\n  &__column {\r\n    padding: 0 50px 25px;\r\n    flex: 0 1 33.333%;\r\n    margin: 0 0 25px 0;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    &::before {\r\n      content: \"\";\r\n      background: #bb9c66;\r\n      width: 10px;\r\n      height: 10px;\r\n      flex: 0 0 10px;\r\n      border-radius: 50%;\r\n      position: absolute;\r\n      left: 50%;\r\n      bottom: -5px;\r\n      transform: translate(-50%, 0);\r\n    }\r\n    @media (max-width: 975px) {\r\n      flex: 0 1 50%;\r\n    }\r\n    @media (max-width: 650px) {\r\n      flex: 1 1 100%;\r\n    }\r\n  }\r\n  &__item {\r\n  }\r\n  &__decor {\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0;\r\n    width: 24px;\r\n    height: calc(100% + 9px);\r\n    transform: translate(50%, 0);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    z-index: 5;\r\n    &::before {\r\n      content: \"\";\r\n      width: 1px;\r\n      flex: 1 1 auto;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: calc(24px * 0.72);\r\n      height: calc(24px * 0.72);\r\n      flex: 0 0 calc(24px * 0.72);\r\n      transform: rotate(-45deg);\r\n      border: 1px solid #bb9c66;\r\n      margin: 15px 0 0 0;\r\n    }\r\n    span {\r\n      flex: 1 1 auto;\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      &::before {\r\n        content: \"\";\r\n        background: #bb9c66;\r\n        width: 10px;\r\n        height: 10px;\r\n        flex: 0 0 10px;\r\n        border-radius: 50%;\r\n        margin: 20px 0;\r\n      }\r\n      &::after {\r\n        content: \"\";\r\n        width: 1px;\r\n        flex: 1 1 auto;\r\n        background: #bb9c66;\r\n      }\r\n    }\r\n  }\r\n}\r\n.item {\r\n  position: relative;\r\n  padding: 30px 30px 40px;\r\n  text-align: center;\r\n  height: 250px;\r\n  width: 250px;\r\n  border-radius: 50%;\r\n  overflow: hidden;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  @media (min-width: 992px) {\r\n    &:hover {\r\n      .item__bg {\r\n        transform: scale(1.1);\r\n        &::after {\r\n          opacity: 0.8;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    position: absolute;\r\n    z-index: 5;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n  }\r\n  &__icon {\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 0 22px 0;\r\n  }\r\n  &__title {\r\n    letter-spacing: 2.1px;\r\n    position: relative;\r\n    z-index: 2;\r\n    color: #fff;\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\r\n    font-family: \"PDFin\";\r\n    flex: 1 1 auto;\r\n    line-height: calc(25 / 21);\r\n  }\r\n  &__decor {\r\n    text-align: center;\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &__bg {\r\n    transition: transform 0.5s ease 0s;\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    &::after {\r\n      content: \"\";\r\n      transition: opacity 0.5s ease 0s;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 100%;\r\n      top: 0;\r\n      left: 0;\r\n      background: rgba($color: #1c242a, $alpha: 0.75);\r\n    }\r\n  }\r\n}\r\n.text-categories {\r\n  color: #333;\r\n  font-size: 15px;\r\n  line-height: calc(25 / 15);\r\n  @media (max-width: 767px) {\r\n    text-align: justify;\r\n  }\r\n  p {\r\n    margin: 0 0 25px 0;\r\n    &:last-child {\r\n      margin: 0;\r\n    }\r\n  }\r\n  &__body {\r\n    padding: 10px 0 25px 130px;\r\n    background: url(img/mini-pattern.png) 0 0 no-repeat,\r\n      url(img/pattern.png) 0 5px repeat-y;\r\n  }\r\n}\r\n","*{\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tborder: 0;\r\n}\r\n*, *::before, *::after {box-sizing: border-box;}\r\n:focus,:active{outline: none;}\r\na:focus,a:active{outline: none;}\r\n\r\nnav,footer,header,aside{display: block;}\r\n\r\nhtml,body{\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tfont-size: 100%;\r\n\tline-height: 1;\r\n\tfont-size: 14px;\r\n\t-ms-text-size-adjust: 100%;\r\n\t-moz-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%;\r\n}\r\ninput,button,textarea{font-family: inherit;}\r\n\r\ninput::-ms-clear{display: none;}\r\nbutton{cursor: pointer;}\r\nbutton::-msz-focus-inner {padding: 0; border: 0;}\r\na,-a:visited{text-decoration: none;}\r\na:hover{text-decoration: none;}\r\nul{list-style: none;}\r\nli{list-style: none;}\r\nimg{vertical-align: none;}\r\n\r\nh1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}","@font-face {\r\n  font-family: \"Bravo\";\r\n  src: url(\"fonts/BravoRGRegular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"CeremoniousOne\";\r\n  src: url(\"fonts/ceremonious_one.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-regular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-medium.ttf\") format(\"truetype\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}\r\n",":root {\r\n  --main-bg-color: brown;\r\n}\r\n"],"sourceRoot":""}]);
+}
+
+.services {
+  background: #1c242a;
+  padding: 60px 0 50px;
+  overflow: hidden;
+}
+@media (max-width: 640px) {
+  .services {
+    padding: 50px 0 0 0;
+  }
+}
+.services__header {
+  margin: 0 0 40px 0;
+}
+.services__row {
+  margin: 0 -50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services__column {
+  flex: 0 1 33.333%;
+  padding: 0 50px;
+  margin: 0 0 50px 0;
+}
+@media (max-width: 975px) {
+  .services__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 640px) {
+  .services__column {
+    flex: 1 1 100%;
+  }
+}
+
+.service {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.service__image {
+  height: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+.service__title {
+  color: #fff;
+  font-family: "PDFin";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1904761905;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+}
+.service__text {
+  color: #bb9c66;
+  font-size: 15px;
+  line-height: 1.6666666667;
+  margin: 23px 0 0 0;
+}
+.service__btn {
+  position: relative;
+  font-family: "PDFin";
+  font-size: 21px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 2.1px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px 0 0 0;
+}
+.service__btn::before {
+  content: "";
+  position: absolute;
+  background: #bb9c66;
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+}
+.service__btn span {
+  background: #1c242a;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+  transition: letter-spacing 0.5s ease 0s;
+}
+@media (min-width: 992px) {
+  .service__btn:hover {
+    letter-spacing: 4.2px;
+  }
+}
+
+.quotes {
+  padding: 64px 0 75px;
+}
+
+.slider-quotes__body .swiper-slide {
+  display: flex;
+}
+.slider-quotes__slide {
+  display: flex;
+  align-items: center;
+  opacity: 0 !important;
+}
+.slider-quotes__slide.swiper-slide-active {
+  opacity: 1 !important;
+}
+.slider-quotes__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  flex: 0 0 33.6842105263%;
+}
+.slider-quotes__image img {
+  max-width: 100%;
+}
+.slider-quotes__content {
+  flex: 0 1 515px;
+}
+.slider-quotes__title {
+  font-size: 25px;
+  line-height: 1.2;
+  font-style: italic;
+  margin: 0 0 1.2em 0;
+}
+.slider-quotes__info {
+  font-size: 15px;
+  color: #1c242a;
+}
+.slider-quotes__info p {
+  margin: 0 0 7px 0;
+}
+.slider-quotes__info p:last-child {
+  margin: 0;
+}
+
+.control-slider-quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.control-slider-quotes__decor {
+  display: flex;
+  align-items: center;
+  flex: 0 1 33.333%;
+}
+.control-slider-quotes__decor::before {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: #bb9c66;
+}
+.control-slider-quotes__decor::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #bb9c66;
+  border-radius: 50%;
+  margin: 0 0 0 5px;
+}
+.control-slider-quotes__decor:last-child {
+  flex-direction: row-reverse;
+}
+.control-slider-quotes__decor:last-child::after {
+  margin: 0 5px 0 0;
+}
+.control-slider-quotes__link {
+  flex: 0 1 33.333%;
+  text-align: center;
+}
+.control-slider-quotes__circle {
+  cursor: pointer;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #bb9c66;
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_14___}) center no-repeat;
+  transition: transform 0.5s ease 0s;
+}
+@media (min-width: 992px) {
+  .control-slider-quotes__circle:hover {
+    transform: rotate(135deg);
+  }
+}`, "",{"version":3,"sources":["webpack://./src/libs/normalize.css","webpack://./src/index.scss","webpack://./src/style/_nullstyle.scss","webpack://./src/style/_fonts.scss","webpack://./src/style/_var.scss"],"names":[],"mappings":"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","sourcesContent":["/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   ========================================================================== */\n\n/**\n * 1. Correct the line height in all browsers.\n * 2. Prevent adjustments of font size after orientation changes in iOS.\n */\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers.\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Render the `main` element consistently in IE.\n */\n\nmain {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Remove the gray background on active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * 1. Remove the bottom border in Chrome 57-\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove the border on images inside links in IE 10.\n */\n\nimg {\n  border-style: none;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers.\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\n[type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Correct the padding in Firefox.\n */\n\nfieldset {\n  padding: 0.35em 0.75em 0.625em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\n * Remove the default vertical scrollbar in IE 10+.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10.\n * 2. Remove the padding in IE 10.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in Edge, IE 10+, and Firefox.\n */\n\ndetails {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Misc\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10+.\n */\n\ntemplate {\n  display: none;\n}\n\n/**\n * Add the correct display in IE 10.\n */\n\n[hidden] {\n  display: none;\n}\n","@use \"libs/normalize\";\r\n@use \"style/nullstyle\";\r\n@use \"style/fonts\";\r\n@use \"style/var\";\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&display=swap&subset=cyrillic-ext\");\r\n@import url(\"https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular&display=swap&subset=cyrillic-ext\");\r\n\r\nbody {\r\n  font-family: \"PT Sans\";\r\n  max-width: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  overflow-x: hidden;\r\n}\r\n.wrapper {\r\n  overflow: hidden;\r\n}\r\n._container {\r\n  max-width: 980px;\r\n  margin: 0 auto;\r\n  padding: 0 15px;\r\n}\r\n._ibg {\r\n  background-position: center;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  img {\r\n    display: none;\r\n  }\r\n}\r\n._ibg img {\r\n  width: 0;\r\n  height: 0;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n}\r\n.header {\r\n  background: #1c242a;\r\n  position: relative;\r\n  z-index: 50;\r\n  &__container {\r\n    position: relative;\r\n    display: flex;\r\n    align-items: center;\r\n    height: 75px;\r\n    @media (max-width: 767px) {\r\n      justify-content: space-between;\r\n    }\r\n  }\r\n  &__logo {\r\n    position: relative;\r\n    z-index: 2;\r\n    width: 144px;\r\n    @media (max-width: 767px) {\r\n      position: absolute;\r\n      left: 50%;\r\n      top: 50%;\r\n      transform: translate(-50%, -50%);\r\n    }\r\n  }\r\n}\r\n.menu {\r\n  padding: 0 0 0 3.16%;\r\n  flex: 1 1 auto;\r\n  @media (max-width: 767px) {\r\n    flex: 0 0 auto;\r\n  }\r\n  &__body {\r\n    @media (max-width: 767px) {\r\n      opacity: 0;\r\n      visibility: hidden;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      left: 0;\r\n      top: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n      &._active {\r\n        opacity: 1;\r\n        visibility: visible;\r\n      }\r\n    }\r\n  }\r\n  &__list {\r\n    display: flex;\r\n    justify-content: center;\r\n    li {\r\n      margin: 0 15px;\r\n    }\r\n    @media (max-width: 767px) {\r\n      display: block;\r\n      text-align: center;\r\n      li {\r\n        margin: 0 0 30px 0;\r\n        &:last-child {\r\n          margin: 0;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 1.4px;\r\n    color: #fff;\r\n    text-transform: uppercase;\r\n    @media (max-width: 767px) {\r\n      font-size: 24px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n}\r\n.icon-menu {\r\n  @media (max-width: 767px) {\r\n    position: relative;\r\n    width: 30px;\r\n    height: 18px;\r\n    cursor: pointer;\r\n    z-index: 5;\r\n    span {\r\n      top: calc(50% - 1px);\r\n      left: 0px;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 2px;\r\n      background: #bb9c66;\r\n      transition: all 0.3s ease 0s;\r\n      &:first-child {\r\n        top: 0;\r\n      }\r\n      &:last-child {\r\n        top: auto;\r\n        bottom: 0px;\r\n      }\r\n    }\r\n    &._active {\r\n      span {\r\n        opacity: 0;\r\n        &:first-child {\r\n          opacity: 1;\r\n          transform: rotate(-45deg);\r\n          top: 8px;\r\n        }\r\n        &:last-child {\r\n          opacity: 1;\r\n          transform: rotate(45deg);\r\n          bottom: 8px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n.actions-header {\r\n  display: flex;\r\n  align-items: center;\r\n  &__region {\r\n    position: relative;\r\n    z-index: 2;\r\n    @extend .menu__link;\r\n    padding: 0 0 0 30px;\r\n    background: url(\"img/icon/globe.png\") left no-repeat;\r\n    line-height: 18px;\r\n    min-width: 18px;\r\n    min-height: 18px;\r\n    @media (max-width: 890px) {\r\n      padding: 0;\r\n      span {\r\n        display: none;\r\n      }\r\n    }\r\n  }\r\n  &__user {\r\n    margin: 0 0 0 30px;\r\n    @media (max-width: 890px) {\r\n      margin: 0 0 0 15px;\r\n    }\r\n  }\r\n}\r\n.user-header {\r\n  &__icon {\r\n    position: relative;\r\n    z-index: 2;\r\n    cursor: pointer;\r\n  }\r\n  &__menu {\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 0.3s ease 0s;\r\n    top: 88px;\r\n    position: absolute;\r\n    right: 0;\r\n    background: #1c242a;\r\n    padding: 20px;\r\n    min-width: 176px;\r\n    @media (max-width: 767px) {\r\n      background: none;\r\n      text-align: center;\r\n      position: fixed;\r\n      width: 100%;\r\n      height: 100%;\r\n      top: 0;\r\n      left: 0;\r\n      overflow: auto;\r\n      padding: 100px 0 20px 0;\r\n      transition: all 0.3s ease 0s;\r\n      background: #273139;\r\n      &::after {\r\n        content: \"\";\r\n        background: #1c242a;\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 75px;\r\n      }\r\n    }\r\n    li {\r\n      margin: 0 0 8px 0;\r\n      @media (max-width: 767px) {\r\n        font-size: 24px;\r\n        margin: 0 0 30px 0;\r\n        font-family: \"PDFin\";\r\n        letter-spacing: 1.4px;\r\n        color: #fff;\r\n        text-transform: uppercase;\r\n      }\r\n      &:last-child {\r\n        margin: 0;\r\n      }\r\n    }\r\n    &._active {\r\n      opacity: 1;\r\n      visibility: visible;\r\n      top: 78px;\r\n      @media (max-width: 767px) {\r\n        top: 0;\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    position: relative;\r\n    z-index: 5;\r\n    color: #fff;\r\n    padding: 0 0 0 30px;\r\n    display: inline-block;\r\n    line-height: 18px;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n    &_1 {\r\n      background: url(\"img/icon/menu/01.png\") 1px center no-repeat;\r\n    }\r\n    &_2 {\r\n      background: url(\"img/icon/menu/02.png\") left center no-repeat;\r\n    }\r\n    &_3 {\r\n      background: url(\"img/icon/menu/03.png\") 4px center no-repeat;\r\n    }\r\n    &_4 {\r\n      background: url(\"img/icon/menu/04.png\") left center no-repeat;\r\n    }\r\n  }\r\n}\r\n.main {\r\n  position: relative;\r\n  &__control {\r\n    position: absolute;\r\n    z-index: 10;\r\n    left: 50%;\r\n    bottom: 0;\r\n    width: 100px;\r\n    height: 100px;\r\n    transform: translate(-50%, 50%);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    &::after {\r\n      content: \"\";\r\n      background: #fff;\r\n      position: absolute;\r\n      width: 70%;\r\n      height: 70%;\r\n      top: 50%;\r\n      left: 50%;\r\n      transform: translate(-50%, -50%) rotate(-45deg);\r\n    }\r\n  }\r\n}\r\n.main-slider {\r\n  position: relative;\r\n  overflow: hidden;\r\n  .swiper-slide {\r\n    height: auto;\r\n  }\r\n}\r\n.item-main-slider {\r\n  text-align: center;\r\n  padding: 30px 0 100px 0;\r\n  position: relative;\r\n  &__content {\r\n    position: relative;\r\n    z-index: 2;\r\n    height: 100%;\r\n  }\r\n  &__container {\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__bg {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n  }\r\n  &__text {\r\n    color: #fff;\r\n    font-size: 15px;\r\n    line-height: calc(25 / 15);\r\n    max-width: 700px;\r\n    margin: 25px auto 0;\r\n    flex: 1 1 auto;\r\n  }\r\n  &__btn {\r\n    margin: 55px 0 0 0;\r\n  }\r\n}\r\n.control-main-slider {\r\n  &__arrow {\r\n    position: relative;\r\n    z-index: 2;\r\n    background: url(\"img/icon/arrow.png\") 0 0 no-repeat;\r\n    width: 14px;\r\n    height: 24px;\r\n    cursor: pointer;\r\n    &_next {\r\n      transform: rotate(-180deg);\r\n    }\r\n  }\r\n  &__decor {\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 12px;\r\n    animation: rotate 5s infinite linear;\r\n  }\r\n}\r\n@keyframes rotate {\r\n  0% {\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n.title {\r\n  text-align: center;\r\n  &__item {\r\n    font-family: \"CeremoniousOne\";\r\n    color: #bb9c66;\r\n    font-size: 40px;\r\n    margin: 0 0 0.5em 0;\r\n  }\r\n  &__main {\r\n    font-size: 35px;\r\n    font-family: \"PDFin\";\r\n    letter-spacing: 5.25px;\r\n    text-transform: uppercase;\r\n    font-weight: 500;\r\n    line-height: calc(40 / 35);\r\n    &_regular {\r\n      font-weight: 400;\r\n    }\r\n    &_w {\r\n      color: #fff;\r\n    }\r\n    @media (max-width: 767px) {\r\n      font-size: 30px;\r\n    }\r\n  }\r\n}\r\n.btn {\r\n  display: inline-block;\r\n  padding: 0;\r\n  position: relative;\r\n  &::before,\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    height: 3px;\r\n    width: 100%;\r\n  }\r\n  &::before {\r\n    top: 0;\r\n    background: #c3a774;\r\n  }\r\n  &::after {\r\n    bottom: 0;\r\n    background: #8f6630;\r\n  }\r\n  &__body {\r\n    &::before,\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      top: 0;\r\n      height: 100%;\r\n      width: 3px;\r\n      background-image: linear-gradient(to top, #8f6630, #c3a774);\r\n    }\r\n    &::before {\r\n      left: 0;\r\n    }\r\n    &::after {\r\n      right: 0;\r\n    }\r\n    span {\r\n      min-height: 50px;\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      color: #fff;\r\n      font-size: 15px;\r\n      text-transform: uppercase;\r\n      font-family: \"PDFin\";\r\n      letter-spacing: 2px;\r\n      padding: 0 50px;\r\n      &::after {\r\n        content: \"\";\r\n        background-image: linear-gradient(\r\n          to top,\r\n          rgb(187, 156, 102) 0%,\r\n          rgba(187, 156, 102, 0) 100%\r\n        );\r\n        opacity: 0.06;\r\n        position: absolute;\r\n        left: 0;\r\n        top: 0;\r\n        width: 100%;\r\n        height: 50%;\r\n        transition: height 0.5s ease 0s, opacity 0.5s ease 0s;\r\n      }\r\n    }\r\n  }\r\n  @media (min-width: 992px) {\r\n    &:hover {\r\n      .btn__body {\r\n        span {\r\n          &::after {\r\n            opacity: 0.3;\r\n            height: 100%;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &_big {\r\n    .btn__body span {\r\n      font-size: 21px;\r\n      color: #000;\r\n      font-weight: 500;\r\n      letter-spacing: 0px;\r\n      padding: 0 10px;\r\n    }\r\n  }\r\n}\r\n.lots {\r\n  padding: 85px 0 63px;\r\n  &__container {\r\n    overflow: hidden;\r\n  }\r\n  &__header {\r\n    margin: 0 0 40px;\r\n  }\r\n}\r\n.block-header {\r\n  &__title {\r\n    margin: 0 0 20px 0;\r\n  }\r\n}\r\n.block-decor {\r\n  display: flex;\r\n  align-items: center;\r\n  &__items {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n    align-items: center;\r\n    &::before {\r\n      content: \"\";\r\n      height: 1px;\r\n      width: 100%;\r\n      flex: 1 1 auto;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: calc(15px * 0.72);\r\n      height: calc(25px * 0.72);\r\n      flex: 0 0 calc(25px * 0.72);\r\n      border: 1px solid #bb9c66;\r\n      transform: rotate(-45deg);\r\n      margin: 0 5px;\r\n    }\r\n    span {\r\n      display: flex;\r\n      align-items: center;\r\n      margin: 0 5px;\r\n      flex: 0 0 28px;\r\n      justify-content: space-between;\r\n      &::before {\r\n        content: \"\";\r\n        width: 10px;\r\n        height: 10px;\r\n        flex: 0 0 10px;\r\n        border-radius: 50%;\r\n        border: 1px solid #bb9c66;\r\n      }\r\n      &::after {\r\n        content: \"\";\r\n        width: calc(15px * 0.72);\r\n        height: calc(15px * 0.72);\r\n        flex: 0 0 calc(15px * 0.72);\r\n        border: 1px solid #bb9c66;\r\n        transform: rotate(-45deg);\r\n      }\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        flex-direction: row-reverse;\r\n      }\r\n    }\r\n  }\r\n  &__icon {\r\n    text-align: center;\r\n    flex: 0 0 145px;\r\n    @media (max-width: 767px) {\r\n      flex: 0 0 95px;\r\n    }\r\n    img {\r\n      max-width: 100%;\r\n      border-radius: 50%;\r\n      box-shadow: #bb9c66 0 14px 12px -8px;\r\n    }\r\n    &_dark-shadow {\r\n      img {\r\n        box-shadow: #000 0 14px 12px -8px;\r\n      }\r\n    }\r\n  }\r\n}\r\n.slider-lots {\r\n  &__body {\r\n    margin: 0 -50px 50px;\r\n    .swiper-slide {\r\n      height: auto;\r\n    }\r\n    @media (max-width: 975px) {\r\n      margin: 0 -15px 50px;\r\n    }\r\n  }\r\n  &__slide {\r\n    padding: 0 50px;\r\n    @media (max-width: 975px) {\r\n      padding: 0 15px;\r\n    }\r\n  }\r\n}\r\n.control-slider-lots {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  &__arrow {\r\n    cursor: pointer;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: flex-end;\r\n    span {\r\n      background: url(\"img/icon/lots-slider_arrow.png\") left no-repeat;\r\n      flex: 0 0 108px;\r\n      width: 108px;\r\n      height: 35px;\r\n      @media (max-width: 450px) {\r\n        flex: 0 0 50px;\r\n      }\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      margin: 0 5px;\r\n      width: 15px;\r\n      height: 15px;\r\n      border-radius: 50%;\r\n      border: 1px solid #bb9c66;\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      span {\r\n        transform: rotate(-180deg);\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    background: url(\"img/btn-decor_circul.png\") 0 0 no-repeat;\r\n    flex: 0 0 100px;\r\n    width: 100px;\r\n    height: 100px;\r\n    margin: 0 20px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    font-size: 21px;\r\n    color: #000;\r\n    font-weight: 500;\r\n    font-family: \"PDFin\";\r\n    text-transform: uppercase;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        border-radius: 50%;\r\n        background: linear-gradient(to top, #8f6630, #c3a774);\r\n      }\r\n    }\r\n  }\r\n}\r\n.lot {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100%;\r\n  text-align: center;\r\n  &__header {\r\n    text-align: center;\r\n    margin: 0 0 30px 0;\r\n    position: relative;\r\n  }\r\n  &__image {\r\n    display: block;\r\n    border: 3px solid #bb9c66;\r\n    padding: 0 0 98% 0;\r\n  }\r\n  &__title {\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    color: #000;\r\n    text-transform: uppercase;\r\n    font-family: \"PDFin\";\r\n    line-height: calc(25 / 21);\r\n    flex: 1 1 auto;\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 0 calc(27 / 21 * 1em) 0;\r\n    @media (max-width: 975px) {\r\n      font-size: 18px;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        text-decoration: underline;\r\n      }\r\n    }\r\n  }\r\n  &__btn {\r\n    margin: 0 25px;\r\n  }\r\n}\r\n.timer-lot {\r\n  transform: translate(-50%, 50%);\r\n  width: 72px;\r\n  height: 72px;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  position: relative;\r\n  padding: 2px 0 0 0;\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 0;\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &::before {\r\n    content: \"\";\r\n    background: #fff;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    transform: rotate(-45deg);\r\n  }\r\n  &__icon {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__item {\r\n    font-family: \"PT Sans Narrow\";\r\n    font-size: 18px;\r\n  }\r\n}\r\n.info-lot {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin: 0 0 35px 0;\r\n  &__statistic {\r\n    flex: 0 0 50px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  &__icon {\r\n    width: calc(25px * 0.72);\r\n    height: calc(25px * 0.72);\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    position: relative;\r\n    margin: 0 0 10px 0;\r\n    img {\r\n      position: relative;\r\n      z-index: 2;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 100%;\r\n      transform: rotate(-45deg);\r\n      background: #1c242a;\r\n    }\r\n  }\r\n  &__value {\r\n    font-size: 14px;\r\n    border-bottom: 1px solid #bb9c66;\r\n    min-width: 50px;\r\n  }\r\n  &__current-bet {\r\n    flex: 1 1 auto;\r\n    @media (max-width: 975px) {\r\n      flex: 0 0 auto;\r\n    }\r\n  }\r\n}\r\n.current-bet-info-lot {\r\n  padding: 0 5px;\r\n  position: relative;\r\n  @media (max-width: 975px) {\r\n    padding: 0 10px;\r\n  }\r\n  &::after {\r\n    content: \"\";\r\n    position: absolute;\r\n    width: 72px;\r\n    height: 72px;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%) rotate(-45deg);\r\n    border: 1px solid #bb9c66;\r\n  }\r\n  div {\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &__label {\r\n    margin: 0 0 5px 0;\r\n  }\r\n  &__value {\r\n    font-family: \"Bravo\";\r\n    font-size: 50px;\r\n    padding: 0 0 5px 0;\r\n    white-space: nowrap;\r\n    @media (max-width: 975px) {\r\n      font-size: 35px;\r\n    }\r\n  }\r\n}\r\n.categories {\r\n  margin: 0 0 70px 0;\r\n  &__container {\r\n    overflow: hidden;\r\n    position: relative;\r\n    margin: 0 auto 85px;\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      bottom: 0;\r\n      height: 45px;\r\n      width: 100%;\r\n      background: #fff;\r\n    }\r\n  }\r\n  &__row {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    margin: 0 -50px;\r\n    position: relative;\r\n    padding: 34px 0 0 0;\r\n    &::before,\r\n    &::after {\r\n      content: \"\";\r\n      position: absolute;\r\n      top: 4px;\r\n      width: calc(24px * 0.72);\r\n      height: calc(24px * 0.72);\r\n      flex: 0 0 calc(24px * 0.72);\r\n      transform: translate(-50%, 0) rotate(-45deg);\r\n      border: 1px solid #bb9c66;\r\n    }\r\n    &::before {\r\n      left: 33.333%;\r\n      @media (max-width: 975px) {\r\n        left: 50%;\r\n      }\r\n      @media (max-width: 975px) {\r\n        display: none;\r\n      }\r\n    }\r\n    &::after {\r\n      left: 66.667%;\r\n      margin: 0 1px 0 0;\r\n      @media (max-width: 975px) {\r\n        display: none;\r\n      }\r\n    }\r\n  }\r\n  &__column {\r\n    padding: 0 50px 25px;\r\n    flex: 0 1 33.333%;\r\n    margin: 0 0 25px 0;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n    &::before {\r\n      content: \"\";\r\n      background: #bb9c66;\r\n      width: 10px;\r\n      height: 10px;\r\n      flex: 0 0 10px;\r\n      border-radius: 50%;\r\n      position: absolute;\r\n      left: 50%;\r\n      bottom: -5px;\r\n      transform: translate(-50%, 0);\r\n    }\r\n    @media (max-width: 975px) {\r\n      flex: 0 1 50%;\r\n    }\r\n    @media (max-width: 650px) {\r\n      flex: 1 1 100%;\r\n    }\r\n  }\r\n  &__decor {\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0;\r\n    width: 24px;\r\n    height: calc(100% + 9px);\r\n    transform: translate(50%, 0);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    z-index: 5;\r\n    &::before {\r\n      content: \"\";\r\n      width: 1px;\r\n      flex: 1 1 auto;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: calc(24px * 0.72);\r\n      height: calc(24px * 0.72);\r\n      flex: 0 0 calc(24px * 0.72);\r\n      transform: rotate(-45deg);\r\n      border: 1px solid #bb9c66;\r\n      margin: 15px 0 0 0;\r\n    }\r\n    span {\r\n      flex: 1 1 auto;\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      &::before {\r\n        content: \"\";\r\n        background: #bb9c66;\r\n        width: 10px;\r\n        height: 10px;\r\n        flex: 0 0 10px;\r\n        border-radius: 50%;\r\n        margin: 20px 0;\r\n      }\r\n      &::after {\r\n        content: \"\";\r\n        width: 1px;\r\n        flex: 1 1 auto;\r\n        background: #bb9c66;\r\n      }\r\n    }\r\n  }\r\n}\r\n.item {\r\n  position: relative;\r\n  padding: 30px 30px 40px;\r\n  text-align: center;\r\n  height: 250px;\r\n  width: 250px;\r\n  border-radius: 50%;\r\n  overflow: hidden;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  @media (min-width: 992px) {\r\n    &:hover {\r\n      .item__bg {\r\n        transform: scale(1.1);\r\n        &::after {\r\n          opacity: 0.8;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    position: absolute;\r\n    z-index: 5;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n  }\r\n  &__icon {\r\n    position: relative;\r\n    z-index: 2;\r\n    margin: 0 0 22px 0;\r\n  }\r\n  &__title {\r\n    letter-spacing: 2.1px;\r\n    position: relative;\r\n    z-index: 2;\r\n    color: #fff;\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\r\n    font-family: \"PDFin\";\r\n    flex: 1 1 auto;\r\n    line-height: calc(25 / 21);\r\n  }\r\n  &__decor {\r\n    text-align: center;\r\n    position: relative;\r\n    z-index: 2;\r\n  }\r\n  &__bg {\r\n    transition: transform 0.5s ease 0s;\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    &::after {\r\n      content: \"\";\r\n      transition: opacity 0.5s ease 0s;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 100%;\r\n      top: 0;\r\n      left: 0;\r\n      background: rgba($color: #1c242a, $alpha: 0.75);\r\n    }\r\n  }\r\n}\r\n.text-categories {\r\n  color: #333;\r\n  font-size: 15px;\r\n  line-height: calc(25 / 15);\r\n  @media (max-width: 767px) {\r\n    text-align: justify;\r\n  }\r\n  p {\r\n    margin: 0 0 25px 0;\r\n    &:last-child {\r\n      margin: 0;\r\n    }\r\n  }\r\n  &__body {\r\n    padding: 10px 0 25px 130px;\r\n    background: url(img/mini-pattern.png) 0 0 no-repeat,\r\n      url(img/pattern.png) 0 5px repeat-y;\r\n  }\r\n}\r\n.services {\r\n  background: #1c242a;\r\n  padding: 60px 0 50px;\r\n  overflow: hidden;\r\n  @media (max-width: 640px) {\r\n    padding: 50px 0 0 0;\r\n  }\r\n  &__header {\r\n    margin: 0 0 40px 0;\r\n  }\r\n  &__row {\r\n    margin: 0 -50px;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n  }\r\n  &__column {\r\n    flex: 0 1 33.333%;\r\n    padding: 0 50px;\r\n    margin: 0 0 50px 0;\r\n    @media (max-width: 975px) {\r\n      flex: 0 1 50%;\r\n    }\r\n    @media (max-width: 640px) {\r\n      flex: 1 1 100%;\r\n    }\r\n  }\r\n}\r\n.service {\r\n  text-align: center;\r\n  display: flex;\r\n  flex-direction: column;\r\n  &__image {\r\n    height: 205px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    margin: 0 0 10px 0;\r\n  }\r\n  &__title {\r\n    color: #fff;\r\n    font-family: \"PDFin\";\r\n    font-size: 20px;\r\n    font-weight: 500;\r\n    line-height: calc(25 / 21);\r\n    text-transform: uppercase;\r\n    letter-spacing: 2.1px;\r\n  }\r\n  &__text {\r\n    color: #bb9c66;\r\n    font-size: 15px;\r\n    line-height: calc(25 / 15);\r\n    margin: 23px 0 0 0;\r\n  }\r\n  &__btn {\r\n    position: relative;\r\n    font-family: \"PDFin\";\r\n    font-size: 21px;\r\n    font-weight: 500;\r\n    color: #fff;\r\n    letter-spacing: 2.1px;\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n    margin: 30px 0 0 0;\r\n    &::before {\r\n      content: \"\";\r\n      position: absolute;\r\n      background: #bb9c66;\r\n      height: 1px;\r\n      width: 100%;\r\n      top: 50%;\r\n      left: 0;\r\n    }\r\n    span {\r\n      background: #1c242a;\r\n      position: relative;\r\n      z-index: 2;\r\n      padding: 0 15px;\r\n      transition: letter-spacing 0.5s ease 0s;\r\n    }\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        letter-spacing: 4.2px;\r\n      }\r\n    }\r\n  }\r\n}\r\n.quotes {\r\n  padding: 64px 0 75px;\r\n}\r\n.slider-quotes {\r\n  &__body {\r\n    .swiper-slide {\r\n      display: flex;\r\n    }\r\n  }\r\n  &__slide {\r\n    display: flex;\r\n    align-items: center;\r\n    opacity: 0 !important;\r\n    &.swiper-slide-active {\r\n      opacity: 1 !important;\r\n    }\r\n  }\r\n  &__image {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 0 20px;\r\n    flex: 0 0 calc(320 / 950 * 100%);\r\n    img {\r\n      max-width: 100%;\r\n    }\r\n  }\r\n  &__content {\r\n    flex: 0 1 515px;\r\n  }\r\n  &__title {\r\n    font-size: 25px;\r\n    line-height: calc(30 / 25);\r\n    font-style: italic;\r\n    margin: 0 0 calc(30 / 25 * 1em) 0;\r\n  }\r\n  &__info {\r\n    font-size: 15px;\r\n    color: #1c242a;\r\n    p {\r\n      margin: 0 0 7px 0;\r\n      &:last-child {\r\n        margin: 0;\r\n      }\r\n    }\r\n  }\r\n}\r\n.control-slider-quotes {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  max-width: 400px;\r\n  margin: 0 auto;\r\n  &__decor {\r\n    display: flex;\r\n    align-items: center;\r\n    flex: 0 1 33.333%;\r\n    &::before {\r\n      content: \"\";\r\n      flex: 1 1 auto;\r\n      height: 1px;\r\n      background: #bb9c66;\r\n    }\r\n    &::after {\r\n      content: \"\";\r\n      width: 10px;\r\n      height: 10px;\r\n      border: 1px solid #bb9c66;\r\n      border-radius: 50%;\r\n      margin: 0 0 0 5px;\r\n    }\r\n    &:last-child {\r\n      flex-direction: row-reverse;\r\n      &::after {\r\n        margin: 0 5px 0 0;\r\n      }\r\n    }\r\n  }\r\n  &__link {\r\n    flex: 0 1 33.333%;\r\n    text-align: center;\r\n  }\r\n  &__circle {\r\n    cursor: pointer;\r\n    display: inline-flex;\r\n    width: 50px;\r\n    height: 50px;\r\n    border-radius: 50%;\r\n    border: 1px solid #bb9c66;\r\n    background: url(\"img/icon/refresh.png\") center no-repeat;\r\n    transition: transform 0.5s ease 0s;\r\n    @media (min-width: 992px) {\r\n      &:hover {\r\n        transform: rotate(135deg);\r\n      }\r\n    }\r\n  }\r\n}\r\n","*{\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tborder: 0;\r\n}\r\n*, *::before, *::after {box-sizing: border-box;}\r\n:focus,:active{outline: none;}\r\na:focus,a:active{outline: none;}\r\n\r\nnav,footer,header,aside{display: block;}\r\n\r\nhtml,body{\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tfont-size: 100%;\r\n\tline-height: 1;\r\n\tfont-size: 14px;\r\n\t-ms-text-size-adjust: 100%;\r\n\t-moz-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%;\r\n}\r\ninput,button,textarea{font-family: inherit;}\r\n\r\ninput::-ms-clear{display: none;}\r\nbutton{cursor: pointer;}\r\nbutton::-msz-focus-inner {padding: 0; border: 0;}\r\na,-a:visited{text-decoration: none;}\r\na:hover{text-decoration: none;}\r\nul{list-style: none;}\r\nli{list-style: none;}\r\nimg{vertical-align: none;}\r\n\r\nh1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}","@font-face {\r\n  font-family: \"Bravo\";\r\n  src: url(\"fonts/BravoRGRegular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"CeremoniousOne\";\r\n  src: url(\"fonts/ceremonious_one.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-regular.ttf\") format(\"truetype\");\r\n  font-weight: normal;\r\n  font-style: normal;\r\n}\r\n@font-face {\r\n  font-family: \"PDFin\";\r\n  src: url(\"fonts/pfdintextcondpro-medium.ttf\") format(\"truetype\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}\r\n",":root {\r\n  --main-bg-color: brown;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11972,6 +12834,13 @@ var ___HTML_LOADER_IMPORT_27___ = new URL(/* asset import */ __webpack_require__
 var ___HTML_LOADER_IMPORT_28___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/08/beckground.png */ "./src/img/categories/08/beckground.png"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_29___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/09/icon.png */ "./src/img/categories/09/icon.png"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_30___ = new URL(/* asset import */ __webpack_require__(/*! ./img/categories/09/beckground.png */ "./src/img/categories/09/beckground.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_31___ = new URL(/* asset import */ __webpack_require__(/*! ./img/icon/decor/02.png */ "./src/img/icon/decor/02.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_32___ = new URL(/* asset import */ __webpack_require__(/*! ./img/icon/magnifier.png */ "./src/img/icon/magnifier.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_33___ = new URL(/* asset import */ __webpack_require__(/*! ./img/icon/cogwheel.png */ "./src/img/icon/cogwheel.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_34___ = new URL(/* asset import */ __webpack_require__(/*! ./img/icon/service.png */ "./src/img/icon/service.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_35___ = new URL(/* asset import */ __webpack_require__(/*! ./img/icon/decor/03.png */ "./src/img/icon/decor/03.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_36___ = new URL(/* asset import */ __webpack_require__(/*! ./img/MT.png */ "./src/img/MT.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_37___ = new URL(/* asset import */ __webpack_require__(/*! ./img/MT2.png */ "./src/img/MT2.png"), __webpack_require__.b);
 // Module
 var code = `<!DOCTYPE html>
 <html lang="en">
@@ -12510,6 +13379,130 @@ var code = `<!DOCTYPE html>
             </div>
           </div>
         </div>
+        <section class="services">
+          <div class="services__container _container">
+            <div class="services__header block-header">
+              <div class="block-header__title title">
+                <div class="title__item">Дополнительные</div>
+                <div class="title__main title__main_w">услуги</div>
+              </div>
+              <div class="block-header__decor block-decor">
+                <div class="block-decor__items">
+                  <span></span>
+                </div>
+                <div class="block-decor__icon block-decor__icon_dark-shadow">
+                  <img src="${___HTML_LOADER_IMPORT_31___}" alt="" />
+                </div>
+                <div class="block-decor__items">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="services__row">
+              <div class="services__column">
+                <div class="services__item service">
+                  <a href="" class="service__image">
+                    <img src="${___HTML_LOADER_IMPORT_32___}" alt="" />
+                  </a>
+                  <a href="" class="service__title">Экспертная оценка</a>
+                  <div class="service__text">
+                    Мы собираем эксклюзивную публику и экслюзивные лоты, даем
+                    удобный
+                  </div>
+                  <a href="" class="service__btn"><span>Подробнее</span></a>
+                </div>
+              </div>
+              <div class="services__column">
+                <div class="services__item service">
+                  <a href="" class="service__image">
+                    <img src="${___HTML_LOADER_IMPORT_33___}" alt="" />
+                  </a>
+                  <a href="" class="service__title">заказ комплектующих</a>
+                  <div class="service__text">
+                    Мы собираем эксклюзивную публику и экслюзивные лоты, даем
+                    удобный
+                  </div>
+                  <a href="" class="service__btn"><span>Подробнее</span></a>
+                </div>
+              </div>
+              <div class="services__column">
+                <div class="services__item service">
+                  <a href="" class="service__image">
+                    <img src="${___HTML_LOADER_IMPORT_34___}" alt="" />
+                  </a>
+                  <a href="" class="service__title">ремонт и реставрациЯ</a>
+                  <div class="service__text">
+                    Мы собираем эксклюзивную публику и экслюзивные лоты, даем
+                    удобный
+                  </div>
+                  <a href="" class="service__btn"><span>Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="quotes">
+          <div class="quotes__container _container">
+            <div class="quotes__header block-header">
+              <div class="block-header__title title">
+                <div class="title__item">Интересные</div>
+                <div class="title__main">ЦитатЫ</div>
+              </div>
+              <div class="block-header__decor block-decor">
+                <div class="block-decor__items">
+                  <span></span>
+                </div>
+                <div class="block-decor__icon">
+                  <img src="${___HTML_LOADER_IMPORT_35___}" alt="" />
+                </div>
+                <div class="block-decor__items">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="quotes__slider slider-quotes">
+              <div class="slider-quotes__body _slider">
+                <div class="slider-quotes__slide">
+                  <div class="slider-quotes__image">
+                    <img src="${___HTML_LOADER_IMPORT_36___}" alt="" />
+                  </div>
+                  <div class="slider-quotes__content">
+                    <div class="slider-quotes__title">
+                      «Легче одурачить людей, чем убедить их в том, что они
+                      одурачены»
+                    </div>
+                    <div class="slider-quotes__info">
+                      <p>Марк Твен</p>
+                      <p>1935 - 1910</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-quotes__slide">
+                  <div class="slider-quotes__image">
+                    <img src="${___HTML_LOADER_IMPORT_37___}" alt="" />
+                  </div>
+                  <div class="slider-quotes__content">
+                    <div class="slider-quotes__title">
+                      «Легче одурачить людей, чем убедить их в том, что они
+                      одурачены чем убедить их в том, что они одурачены»
+                    </div>
+                    <div class="slider-quotes__info">
+                      <p>Марк Твен</p>
+                      <p>1935 - 1910</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-quotes__control control-slider-quotes">
+                <div class="control-slider-quotes__decor"></div>
+                <div class="control-slider-quotes__link">
+                  <div class="control-slider-quotes__circle"></div>
+                </div>
+                <div class="control-slider-quotes__decor"></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>
@@ -12520,10 +13513,10 @@ var code = `<!DOCTYPE html>
 
 /***/ }),
 
-/***/ "./node_modules/swiper/swiper.css":
-/*!****************************************!*\
-  !*** ./node_modules/swiper/swiper.css ***!
-  \****************************************/
+/***/ "./node_modules/swiper/swiper-bundle.css":
+/*!***********************************************!*\
+  !*** ./node_modules/swiper/swiper-bundle.css ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12543,7 +13536,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../css-loader/dist/cjs.js!../postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../sass-loader/dist/cjs.js!./swiper.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.css");
+/* harmony import */ var _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../css-loader/dist/cjs.js!../postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../sass-loader/dist/cjs.js!./swiper-bundle.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper-bundle.css");
 
       
       
@@ -12563,12 +13556,12 @@ options.insert = _style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTE
 options.domAPI = (_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -12921,6 +13914,28 @@ module.exports = __webpack_require__.p + "assets/33f8390bc3cb334144db.png";
 
 /***/ }),
 
+/***/ "./src/img/MT.png":
+/*!************************!*\
+  !*** ./src/img/MT.png ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/bbe11568c8fd507e42d6.png";
+
+/***/ }),
+
+/***/ "./src/img/MT2.png":
+/*!*************************!*\
+  !*** ./src/img/MT2.png ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/578add0293981461deee.png";
+
+/***/ }),
+
 /***/ "./src/img/btn-decor_circul.png":
 /*!**************************************!*\
   !*** ./src/img/btn-decor_circul.png ***!
@@ -13163,6 +14178,17 @@ module.exports = __webpack_require__.p + "assets/7d53a86eea505ea5e309.png";
 
 /***/ }),
 
+/***/ "./src/img/icon/cogwheel.png":
+/*!***********************************!*\
+  !*** ./src/img/icon/cogwheel.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/8a2e9901396ce6d29851.png";
+
+/***/ }),
+
 /***/ "./src/img/icon/decor/01.png":
 /*!***********************************!*\
   !*** ./src/img/icon/decor/01.png ***!
@@ -13171,6 +14197,28 @@ module.exports = __webpack_require__.p + "assets/7d53a86eea505ea5e309.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/4b4ef2c29cde1d0742c1.png";
+
+/***/ }),
+
+/***/ "./src/img/icon/decor/02.png":
+/*!***********************************!*\
+  !*** ./src/img/icon/decor/02.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/e2273e92820e42a389be.png";
+
+/***/ }),
+
+/***/ "./src/img/icon/decor/03.png":
+/*!***********************************!*\
+  !*** ./src/img/icon/decor/03.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/bb472cb847bd7e75580a.png";
 
 /***/ }),
 
@@ -13204,6 +14252,17 @@ module.exports = __webpack_require__.p + "assets/9a772becca278d59eb37.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/52bbffcc42b63f958226.png";
+
+/***/ }),
+
+/***/ "./src/img/icon/magnifier.png":
+/*!************************************!*\
+  !*** ./src/img/icon/magnifier.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/c9d4221fbf62208bea36.png";
 
 /***/ }),
 
@@ -13259,6 +14318,28 @@ module.exports = __webpack_require__.p + "assets/6d80323cdd6db2b1e848.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/69af0c6f017cc895c50a.png";
+
+/***/ }),
+
+/***/ "./src/img/icon/refresh.png":
+/*!**********************************!*\
+  !*** ./src/img/icon/refresh.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/01ee3207a5cf60872ae2.png";
+
+/***/ }),
+
+/***/ "./src/img/icon/service.png":
+/*!**********************************!*\
+  !*** ./src/img/icon/service.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/50ae395d3f4ba515258e.png";
 
 /***/ }),
 
@@ -23834,10 +24915,10 @@ function getRotateFix(swiper) {
 
 /***/ }),
 
-/***/ "./node_modules/swiper/swiper.mjs":
-/*!****************************************!*\
-  !*** ./node_modules/swiper/swiper.mjs ***!
-  \****************************************/
+/***/ "./node_modules/swiper/swiper-bundle.mjs":
+/*!***********************************************!*\
+  !*** ./node_modules/swiper/swiper-bundle.mjs ***!
+  \***********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23847,6 +24928,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _shared_swiper_core_mjs__WEBPACK_IMPORTED_MODULE_0__.S)
 /* harmony export */ });
 /* harmony import */ var _shared_swiper_core_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./shared/swiper-core.mjs */ "./node_modules/swiper/shared/swiper-core.mjs");
+/* harmony import */ var _modules_virtual_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/virtual.mjs */ "./node_modules/swiper/modules/virtual.mjs");
+/* harmony import */ var _modules_keyboard_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/keyboard.mjs */ "./node_modules/swiper/modules/keyboard.mjs");
+/* harmony import */ var _modules_mousewheel_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/mousewheel.mjs */ "./node_modules/swiper/modules/mousewheel.mjs");
+/* harmony import */ var _modules_navigation_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/navigation.mjs */ "./node_modules/swiper/modules/navigation.mjs");
+/* harmony import */ var _modules_pagination_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/pagination.mjs */ "./node_modules/swiper/modules/pagination.mjs");
+/* harmony import */ var _modules_scrollbar_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/scrollbar.mjs */ "./node_modules/swiper/modules/scrollbar.mjs");
+/* harmony import */ var _modules_parallax_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/parallax.mjs */ "./node_modules/swiper/modules/parallax.mjs");
+/* harmony import */ var _modules_zoom_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/zoom.mjs */ "./node_modules/swiper/modules/zoom.mjs");
+/* harmony import */ var _modules_controller_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/controller.mjs */ "./node_modules/swiper/modules/controller.mjs");
+/* harmony import */ var _modules_a11y_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/a11y.mjs */ "./node_modules/swiper/modules/a11y.mjs");
+/* harmony import */ var _modules_history_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/history.mjs */ "./node_modules/swiper/modules/history.mjs");
+/* harmony import */ var _modules_hash_navigation_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/hash-navigation.mjs */ "./node_modules/swiper/modules/hash-navigation.mjs");
+/* harmony import */ var _modules_autoplay_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modules/autoplay.mjs */ "./node_modules/swiper/modules/autoplay.mjs");
+/* harmony import */ var _modules_thumbs_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./modules/thumbs.mjs */ "./node_modules/swiper/modules/thumbs.mjs");
+/* harmony import */ var _modules_free_mode_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./modules/free-mode.mjs */ "./node_modules/swiper/modules/free-mode.mjs");
+/* harmony import */ var _modules_grid_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./modules/grid.mjs */ "./node_modules/swiper/modules/grid.mjs");
+/* harmony import */ var _modules_manipulation_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./modules/manipulation.mjs */ "./node_modules/swiper/modules/manipulation.mjs");
+/* harmony import */ var _modules_effect_fade_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./modules/effect-fade.mjs */ "./node_modules/swiper/modules/effect-fade.mjs");
+/* harmony import */ var _modules_effect_cube_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./modules/effect-cube.mjs */ "./node_modules/swiper/modules/effect-cube.mjs");
+/* harmony import */ var _modules_effect_flip_mjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./modules/effect-flip.mjs */ "./node_modules/swiper/modules/effect-flip.mjs");
+/* harmony import */ var _modules_effect_coverflow_mjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./modules/effect-coverflow.mjs */ "./node_modules/swiper/modules/effect-coverflow.mjs");
+/* harmony import */ var _modules_effect_creative_mjs__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./modules/effect-creative.mjs */ "./node_modules/swiper/modules/effect-creative.mjs");
+/* harmony import */ var _modules_effect_cards_mjs__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./modules/effect-cards.mjs */ "./node_modules/swiper/modules/effect-cards.mjs");
 /**
  * Swiper 11.1.15
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -23858,6 +24962,35 @@ __webpack_require__.r(__webpack_exports__);
  *
  * Released on: November 18, 2024
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Swiper Class
+const modules = [_modules_virtual_mjs__WEBPACK_IMPORTED_MODULE_1__["default"], _modules_keyboard_mjs__WEBPACK_IMPORTED_MODULE_2__["default"], _modules_mousewheel_mjs__WEBPACK_IMPORTED_MODULE_3__["default"], _modules_navigation_mjs__WEBPACK_IMPORTED_MODULE_4__["default"], _modules_pagination_mjs__WEBPACK_IMPORTED_MODULE_5__["default"], _modules_scrollbar_mjs__WEBPACK_IMPORTED_MODULE_6__["default"], _modules_parallax_mjs__WEBPACK_IMPORTED_MODULE_7__["default"], _modules_zoom_mjs__WEBPACK_IMPORTED_MODULE_8__["default"], _modules_controller_mjs__WEBPACK_IMPORTED_MODULE_9__["default"], _modules_a11y_mjs__WEBPACK_IMPORTED_MODULE_10__["default"], _modules_history_mjs__WEBPACK_IMPORTED_MODULE_11__["default"], _modules_hash_navigation_mjs__WEBPACK_IMPORTED_MODULE_12__["default"], _modules_autoplay_mjs__WEBPACK_IMPORTED_MODULE_13__["default"], _modules_thumbs_mjs__WEBPACK_IMPORTED_MODULE_14__["default"], _modules_free_mode_mjs__WEBPACK_IMPORTED_MODULE_15__["default"], _modules_grid_mjs__WEBPACK_IMPORTED_MODULE_16__["default"], _modules_manipulation_mjs__WEBPACK_IMPORTED_MODULE_17__["default"], _modules_effect_fade_mjs__WEBPACK_IMPORTED_MODULE_18__["default"], _modules_effect_cube_mjs__WEBPACK_IMPORTED_MODULE_19__["default"], _modules_effect_flip_mjs__WEBPACK_IMPORTED_MODULE_20__["default"], _modules_effect_coverflow_mjs__WEBPACK_IMPORTED_MODULE_21__["default"], _modules_effect_creative_mjs__WEBPACK_IMPORTED_MODULE_22__["default"], _modules_effect_cards_mjs__WEBPACK_IMPORTED_MODULE_23__["default"]];
+_shared_swiper_core_mjs__WEBPACK_IMPORTED_MODULE_0__.S.use(modules);
 
 
 
@@ -24069,4 +25202,4 @@ ibg();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.0f8e45101b2ae407f0e9.js.map
+//# sourceMappingURL=main.65a2f2213c6a8b4cd22e.js.map
