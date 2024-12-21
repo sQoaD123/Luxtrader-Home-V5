@@ -1360,3 +1360,106 @@ textarea.input {
   resize: none;
   padding: 0 0;
 }
+.footer {
+  background: #1c242a;
+  padding: 60px 0 45px;
+  &__content {
+    display: flex;
+    @media (max-width: 767px) {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__column {
+    &_full {
+      flex: 1 1 auto;
+    }
+    &:first-child {
+      flex: 0 0 180px;
+      transform: translate(0, -15px);
+    }
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      @media (max-width: 767px) {
+        align-items: center;
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+  &__logo {
+    display: inline-block;
+    margin: 0 0 25px 0;
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+  }
+  &__info {
+    color: #bb9c66;
+    &_m {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      display: none;
+      &_m {
+        margin: 10px 0 0 0;
+        display: block;
+      }
+    }
+  }
+  &__menu {
+    padding: 0 30px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin: 0 15px 15px 0;
+    }
+    @media (max-width: 767px) {
+      justify-content: center;
+      margin: 15px 7px 7px 0;
+    }
+  }
+  &__link {
+    font-family: "PDFin";
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    @media (min-width: 992px) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__phone {
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-start;
+    font-size: 50px;
+    font-family: "Bravo";
+    color: #bb9c66;
+    text-transform: uppercase;
+    small {
+      margin: 2px 5px 0 0;
+      font-size: 25px;
+    }
+    @media (max-width: 991px) {
+      font-size: 40px;
+      small {
+        font-size: 20px;
+      }
+    }
+  }
+  &__callback {
+    color: #bb9c66;
+    background: url("img/icon/callbeck.png") left no-repeat;
+    padding: 0 0 0 12px;
+    span {
+      border-bottom: 1px dashed;
+    }
+  }
+}
